@@ -9,29 +9,30 @@ redirect_from:
 ![cover](/images/outputbig2.png){: .align-center}
 
 <p align="justify">
-Hello! I'm Srushti Manjunath, journeying through the intricate paths of industrial engineering and delving into the analytical world of data science.  The pivot to data science wasn't just a change in discipline, but an expansion of my toolbox - a way to add layers of data interpretation to solve business challenges. 
+Hello! I'm Srushti Manjunath. I started in industrial engineering and now I'm diving into data science. The pivot to data science wasn't just a change in discipline, but an expansion of my toolbox - a way to add layers of data interpretation to solve business challenges. 
 </p>
 
 ### Industrial Engineering Roots
 <p align="justify">
-My academic and professional journey began with a focus on industrial engineering. This solid foundation in optimization, operations and supply chain management has been crucial in understanding the bigger picture in any business setting.
+My academic and professional journey began with a focus on industrial engineering, where I developed a strong base in optimizing processes, operations, and understanding supply chain management. These skills are key to my understanding of the bigger picture in any business setting.
 </p>
 
 ### Operational Excellence at Amazon India and V-Innovative
 <p align="justify">
-My one year of experience in operations management and analytics, was a transformative phase that ingrained in me the ethos of customer obsession, curiosity, ownership, and innovation.
-This experience was vital in deepening my understanding the importance of a customer-centric approach and highlighted the power of data-driven decision-making.
+During my year in operations management and analytics, I embraced the principles of customer focus, curiosity, responsibility, and innovation. 
+This experience was was crucial in sharpening my appreciation for customer-centered strategies and the significance of basing decisions on data.
 </p>
 
 ### A Deeper Dive into Data Science
 <p align="justify">
-Equipped with this real-world experience, I turned my focus to the realm of data science. This shift is driven by a passion to unravel data mysteries, turning numbers into narratives, and insights into actions. My skill set includes advanced techniques in machine learning, deep learning and a strong command of Python, R, and SQL.
+Equipped with this real-world experience, I pivoted to data science. I really enjoy uncovering the patterns and stories that data tells us, and turn them into actionable insights. My toolkit includes advanced data analytics, machine learning and deep learning techniques, along with proficiency in Python, R, and SQL.
+</p>
+
+
+<p align="justify">
+Right now, I'm looking for chances to combine my industrial engineering background with my data science skills. I want to work on projects and in roles where using data to make strategic decisions is key, to drive innovation and make a big impact.
 </p>
 
 <p align="justify">
-Currently, I am exploring opportunities where my background in industrial engineering and my growing expertise in data science intersect. My aim is to contribute to projects and roles where strategic, data-driven solutions are at the forefront, driving innovation and impactful change.
-</p>
-
-<p align="justify">
-At its core, my career is about growth, learning, and the application of insights to real-world challenges. It’s about using the lens of data to view, understand, and solve problems in innovative ways.
+At its core, my career is about growing, learning, and using what I know to tackle real-world problems. It's about using data to see things differently and solve problems in new ways.
 </p>
