@@ -6,5 +6,5 @@ redirect_from:
   - /about/
   - /about.html
 ---
-![cover](/images/outputbig2.png)
+![cover](/images/outputbig2.png){: .align-center}
 
