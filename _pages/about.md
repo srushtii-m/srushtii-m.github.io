@@ -20,7 +20,7 @@ My academic and professional journey began with a focus on industrial engineerin
 ### Operational Excellence at Amazon India and V-Innovative
 <p align="justify">
 During my year in operations management and analytics, I embraced the principles of customer focus, curiosity, responsibility, and innovation. 
-This experience was was crucial in sharpening my appreciation for customer-centered strategies and the significance of basing decisions on data.
+This experience was crucial in sharpening my appreciation for customer-centered strategies and the significance of basing decisions on data.
 </p>
 
 ### A Deeper Dive into Data Science
