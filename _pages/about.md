@@ -9,12 +9,12 @@ redirect_from:
 ![cover](/images/outputbig2.png){: .align-center}
 
 <p align="justify">
-Hello! I'm Srushti Manjunath. I started in industrial engineering and now I'm diving into data science. Switching to data science was a way to enhance my skills and use data to solve business problems.
+Hello! I'm Srushti Manjunath. I started my academic and professional career in industrial engineering and now I'm diving into data science. Switching to data science was a way to enhance my skills to use data to solve business problems.
 </p>
 
 ### Industrial Engineering Roots
 <p align="justify">
-My academic and professional journey began with a focus on industrial engineering, where I developed a strong base in optimizing processes, operations, and understanding supply chain management. These skills are key to my understanding of the bigger picture in any business setting.
+My academic and professional journey began with a focus on industrial engineering, where I developed a strong base in optimizing processes, and operations and understanding supply chain management. These skills are key to my understanding of the bigger picture in any business setting.
 </p>
 
 ### Operational Excellence at Amazon India and V-Innovative
@@ -25,7 +25,7 @@ This experience was crucial in sharpening my appreciation for customer-centered 
 
 ### A Deeper Dive into Data Science
 <p align="justify">
-Equipped with this real-world experience, I pivoted to data science. I really enjoy uncovering the patterns and stories that data tells us, and turn them into actionable insights. My toolkit includes advanced data analytics, machine learning and deep learning techniques, along with proficiency in Python, R, and SQL.
+Equipped with this real-world experience, I pivoted to data science. I enjoy uncovering the patterns and stories that data tells us, and turn them into actionable insights. My toolkit includes advanced data analytics, machine learning, and deep learning techniques, along with proficiency in Python, R, and SQL.
 </p>
 
 
