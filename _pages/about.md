@@ -9,7 +9,7 @@ redirect_from:
 ![cover](/images/outputbig2.png){: .align-center}
 
 <p align="justify">
-Hello! I'm Srushti Manjunath. I started in industrial engineering and now I'm diving into data science. The pivot to data science wasn't just a change in discipline, but an expansion of my toolbox - a way to add layers of data interpretation to solve business challenges. 
+Hello! I'm Srushti Manjunath. I started in industrial engineering and now I'm diving into data science. Switching to data science was a way to enhance my skills and use data to solve business problems.
 </p>
 
 ### Industrial Engineering Roots

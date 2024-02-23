@@ -21,7 +21,7 @@ Education
 
 Work Experience
 ======
-<p align="justify">
+
 * **Operations Analyst @ V-Innovative Engineering** (October 2021 – July 2022) 
   * Quality Control: Implemented Six Sigma methodologies in data analysis for quality control and supply chain optimization, achieving a reduction in product defects and a 5% decrease in inventory costs, while enhancing supplier performance metrics
   * Reporting and Analysis: Utilized Python and SQL for automated regulatory compliance reporting, and created real-time project management dashboards in Tableau, improving project delivery efficiency
@@ -34,8 +34,7 @@ Work Experience
 * **Research Intern @ Hindustan Aeronautics Limited** (May 2018 - Jul 2018)
   * Conducted a comprehensive research internship in the Integrated Materials Management Department within the Engine Division.
   * Led a pivotal project investigating the feasibility of integrating barcode technology for enhanced material traceability.
-  * Successfully applied lean manufacturing and Six Sigma methodologies to streamline processes in the outbound unit.
-</p>
+
 
 Skills
 ======
