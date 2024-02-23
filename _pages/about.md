@@ -26,8 +26,12 @@ This experience was vital in deepening my understanding the importance of a cust
 ### A Deeper Dive into Data Science
 <p align="justify">
 Equipped with this real-world experience, I turned my focus to the realm of data science. This shift is driven by a passion to unravel data mysteries, turning numbers into narratives, and insights into actions. My skill set includes advanced techniques in machine learning, deep learning and a strong command of Python, R, and SQL.
+</p>
 
+<p align="justify">
 Currently, I am exploring opportunities where my background in industrial engineering and my growing expertise in data science intersect. My aim is to contribute to projects and roles where strategic, data-driven solutions are at the forefront, driving innovation and impactful change.
+</p>
 
+<p align="justify">
 At its core, my career is about growth, learning, and the application of insights to real-world challenges. It’s about using the lens of data to view, understand, and solve problems in innovative ways.
 </p>
