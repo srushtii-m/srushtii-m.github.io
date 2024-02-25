@@ -14,13 +14,12 @@ As of November 2023, Walmart is the world's largest retailer, with global sales 
 ### Some insights from the Exploratory Data Analysis
 
 * The popular type of store is Type A - Walmart Supercenter, with the highest average weekly sales.
-![image1](images\walmart_store.png)
-<br/><img src='images\walmart_store.png'>
-![image2](images\walmart_store2.png)
+![image1](images/walmart_store.png)
+![image2](images/walmart_store2.png)
 
 * Holiday weeks, specifically weeks 5, 35, 46, and 51, demonstrate a significant spike in sales, as indicated by the higher average sales per week compared to non-holiday periods. Despite accounting for a smaller portion of the data, these weeks markedly impact overall sales figures.
-![image3](images\walmart_holiday.png)
-![image4](images\walmart_holiday2.png)
+![image3](images/walmart_holiday.png)
+![image4](images/walmart_holiday2.png)
 
 * The variables Temperature, Fuel Price, Consumer Price Index (CPI), and Unemployment exhibit a very low correlation with weekly sales, suggesting their limited impact on sales forecasting. 
 
@@ -28,7 +27,7 @@ Additionally, the 'month' and 'day' columns, showing a high correlation with the
 
 Furthermore, Markdowns 4 and 5 are found to be highly correlated with Markdown 1, indicating an overlap in information, and thus, they can be streamlined by removing them from the dataset.
 
-![image1](images\walmart_heatmap.png)
+![image5](images/walmart_heatmap.png)
 
 ### Model Implementation Details and Modifications
 
