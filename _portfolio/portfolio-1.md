@@ -37,7 +37,7 @@ Furthermore, Markdowns 4 and 5 are found to be highly correlated with Markdown 1
 
 * Model Selection: The SARIMA model was selected due to the dataset's characteristics, particularly the annual seasonal component. This model is an extension of the ARIMA model, specifically designed to handle seasonality​​.
 
-[!image6](/images/walmart-seasonality.png)
+![image6](/images/walmart-seasonality.png)
 
 We can see the seasonality in the weekly sales data, which clearly tells its a time series problem.
 
@@ -51,7 +51,7 @@ Lag (seasonal length in the data)​​.
 
 * Model Fitting: The final SARIMA model was fitted using the parameters (3, 0, 4) for the non-seasonal component and (1, 1, 1, 52) for the seasonal component. This configuration was determined to have the least AIC value, indicating optimal model performance. The model was then used to calculate the Weighted Mean Average Error (WMAE) for evaluation​​. The WMAE was found to be 438.62 and the predictions are as shown below.
 
-[!image7](/images/walmart_sarima.png)
+![image7](/images/walmart_sarima.png)
 
 * Comparison with Other Models: In addition to SARIMA, several other models were tested and their limitations are as follows:
     * Traditional ML Models- Regression models like Ridge Regressor, Random Forest, and XGBoost provided good WMAE scores but struggled with extrapolation, i.e., making predictions outside the known data range, leading to high errors​​.
