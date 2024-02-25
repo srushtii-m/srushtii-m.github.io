@@ -4,7 +4,7 @@ excerpt: "This project leverages network analysis and machine learning to analyz
 collection: portfolio
 ---
 
-### How Can We Accurately Recommend Products Based on Customer Purchases in Amazon's Co-Purchasing Network?
+### How Can We Accurately Recommend Products Based on on Amazon Using Network Analysis?
 
  In this project, I developed a network analysis system to analyze and recommend Amazon products, using a dataset with over half a million reviews and metadata. This involved applying network analysis, particularly centrality metrics, and regression models to predict product sales ranks. Ego graph-based methods were also used for product recommendations based on user behavior. Despite computational limitations restricting the full implementation of community detection concepts, this project offered significant insights into customer purchasing patterns and product strategies in the Amazon marketplace. The complete code is available [here](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/blob/main/README.md).
 
