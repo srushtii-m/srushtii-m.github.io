@@ -15,7 +15,7 @@ As of November 2023, Walmart is the world's largest retailer, with global sales 
 
 * The popular type of store is Type A - Walmart Supercenter, with the highest average weekly sales.
 ![image1](C:\Users\srush\srushtii-m.github.io-1\images\walmart_store.png)
-![image2](images/walmart_store2.png)
+![image2](/images/walmart_store2.png)
 
 * Holiday weeks, specifically weeks 5, 35, 46, and 51, demonstrate a significant spike in sales, as indicated by the higher average sales per week compared to non-holiday periods. Despite accounting for a smaller portion of the data, these weeks markedly impact overall sales figures.
 ![image3](images/walmart_holiday.png)
