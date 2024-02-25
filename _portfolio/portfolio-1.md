@@ -37,8 +37,7 @@ Furthermore, Markdowns 4 and 5 are found to be highly correlated with Markdown 1
 
 * Model Selection: The SARIMA model was selected due to the dataset's characteristics, particularly the annual seasonal component. This model is an extension of the ARIMA model, specifically designed to handle seasonality​​.
 
-![image6](/images/walmart-seasonality.png)
-
+<img src = "/images/walmart-seasonality.png"/>
 We can see the seasonality in the weekly sales data, which clearly tells its a time series problem.
 
 * Parameter Determination: The SARIMA model's implementation involved specifying three major hyperparameters for autoregression (AR), differencing (I), and moving average (MA) for both seasonal and non-seasonal components, along with an additional parameter for the period of the seasonality. The parameters included:      
