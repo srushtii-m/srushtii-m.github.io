@@ -15,10 +15,10 @@ collection: portfolio
 ### Data Description
 The dataset includes 548,552 different product reviews and product metadata (Books, music CDs, DVDs and VHS video tapes).               
 For each product the following information is available:                              
-• Id: Product id (number 0, ..., 548551) \
-• ASIN: Amazon Standard Identification Number \       
-• title: Name/title of the product \             
-• group: Product group (Book, DVD, Video or Music) \  
+• Id: Product id (number 0, ..., 548551)\
+• ASIN: Amazon Standard Identification Number\       
+• title: Name/title of the product\             
+• group: Product group (Book, DVD, Video or Music)\  
 • salesrank: Amazon Salesrank \
 • similar: ASINs of co-purchased products (people who buy X also buy Y)\
 • categories: Location in product category hierarchy to which the product belongs (separated by |, category id in [])\
@@ -36,15 +36,15 @@ For each product the following information is available:
         * Similarity Analysis: Stripped and compared category words between products to calculate similarity.
         * Data Organization: Organized all processed data and metrics into a structured dictionary format.
 
-    * Network Analysis and Regression Modeling: Created a network of products based on similarities, using the Jaccard index for edge weights. Degree centrality and clustering coefficient metrics were analyzed, informing the regression model used to predict product sales ranks. \             
+    * Network Analysis and Regression Modeling: Created a network of products based on similarities, using the Jaccard index for edge weights. Degree centrality and clustering coefficient metrics were analyzed, informing the regression model used to predict product sales ranks.\             
     The regression model, designed to predict Sales Rank where a lower rank indicates higher sales, anticipates negative coefficients, as an increase in feature values should correspond to a lower rank. To enhance the model's performance, regularization techniques like Lasso and Ridge Regression were utilized for feature selection and modification.
 
     ![image4](/images/amazon_histograms.png)
 
-    From the above visualizations, we can observe that:   \          
+    From the above visualizations, we can observe that:\          
         • There are few products with average rating as 0. In the regression model, products with an average rating of 0 were excluded under the assumption that these represented instances of missing ratings and were therefore considered outliers.\
         • A few nodes with degree centrality above 0 are key, as they could be influential or catalyst products in the network, likely due to their role as essential accessories or components for other products.\
-        • Many products in the Amazon co-purchase dataset have a clustering coefficient over 0.2, about one-sixth based on the area under the curve. This data can inform a priority queue for promoting and advertising products, aiding in enhancing engagement through inorganic growth strategies.\
+        • Many products in the Amazon co-purchase dataset have a clustering coefficient over 0.2, about one-sixth based on the area under the curve. This data can inform a priority queue for promoting and advertising products, aiding in enhancing engagement through inorganic growth strategies.
 
     * Community Detection Limitations: While community detection was considered for improving model accuracy, computational limitations hindered the implementation of algorithms like the Girvan Newman Algorithm. The extensive time complexity of these algorithms, relative to the size of the network, made their application impractical for this dataset.
 
@@ -54,7 +54,7 @@ For each product the following information is available:
     
     * Identifying Influential Products: The analysis used these metrics to pinpoint the most popular DVDs (Degree Centrality), products frequently bought with others (Betweenness Centrality), and the most co-purchased items (Closeness Centrality). DVDs were also categorized by genres to further refine the analysis.
 
-    
+
 
 * [Product Recommendation](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/tree/1b1c0533d2989fe47f43e3684965f41426e173d6/Product%20Recommendation)
 
