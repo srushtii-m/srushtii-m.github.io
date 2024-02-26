@@ -6,6 +6,8 @@ collection: portfolio
 
 In this project, I focused on classifying tweets into disaster and non-disaster categories using the Microsoft DeBERTa model. My approach included thoroughly analyzing the data, cleaning it, and preparing it through tokenization and feature engineering. After fine-tuning and training the model with carefully chosen parameters, I evaluated its performance and explored various adjustments, such as refining data cleaning methods and tweaking model hyperparameters, to enhance accuracy.
 
+The complete code is [here](https://github.com/srushtii-m/Natural-Language-Processing-with-Disaster-Tweets)
+
 ![image](/images/disaster_tweets.png)
 ### Approach
 
