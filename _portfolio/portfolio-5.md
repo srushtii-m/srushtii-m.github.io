@@ -63,7 +63,7 @@ relevant for subsequent predictions.
 * Model Parameters
    ![image](/images/stgcn_parameters.png)
 
-* Model Testing
+* Model Testing             
     Upon testing the STGCN model, the evaluation metrics indicated strong predictive performance with a mean absolute error (MAE) of 0.20 rides and a root mean square error (RMSE) of 0.77 rides. 
     
 ## Conclusions
