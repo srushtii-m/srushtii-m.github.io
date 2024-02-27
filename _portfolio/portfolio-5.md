@@ -1,6 +1,6 @@
 ---
 title: "Optimizing Urban Bike Sharing with Spatio Temporal Graph Modeling"
-excerpt: "This project aims to optimize bike distribution for CitiBike in Jersey City using a STGCN model. It involves cleaning and analyzing ride data from 2017 to 2023, identifying key patterns through network analysis, and predicting bike traffic at various stations."
+excerpt: "This project aims to optimize bike distribution for CitiBike using a STGCN model. It involves cleaning and analyzing ride data, identifying key patterns through network analysis, and predicting bike traffic at various stations."
 collection: portfolio
 ---
 
