@@ -1,5 +1,5 @@
 --
-title: "BI & Analytics"
+title: "IE & Supply Chain"
 layout: archive
 permalink: /iescp/
 collection: portfolio
