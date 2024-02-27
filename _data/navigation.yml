@@ -16,10 +16,10 @@ main:
     url: /portfolio/
 
   - title: "IE & Supply Chain"
-    url: /year-archive/
+    url: /ie-sc/
         
-  - title: "Blog"
-    url: /year-archive/
+  #- title: "Blog"
+  #  url: /year-archive/
     
   #- title: "Guide"
   #  url: /markdown/

@@ -51,4 +51,13 @@ Teaching
   * Course: ECE 486 - Control Systems
   * Supervised weekly control systems labs, guiding 30+ students through experiments, ensuring comprehension of key concepts, and assisting in the grading of lab assignments
   * Mentored students in their final projects on the design and implementation of control systems, including evaluating and grading project work
+
+Certifications
+======
+* **AWS Certified Cloud Practitioner**
+* **Practical MLOps: AWS for Data Scientists & DevOps**
+* **Six Sigma: DMAIC from Technical University of Munich**
+
+
+
   
