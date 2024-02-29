@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-![cover](/images/outputbig2.png){: .align-center}
+![cover](/images/cp-2.png){: .align-center}
 
 <p align="justify">
 Hello! I'm Srushti Manjunath. I started my academic and professional career in industrial engineering and now I'm diving into data science. Switching to data science was a way to enhance my skills to use data to solve business problems.
