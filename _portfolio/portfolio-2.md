@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Urban Bike Sharing with Spatio Temporal Graph Modeling"
+title: "Building an ETL Pipeline : Sales Insights Case Study"
 excerpt: "This project streamlines DataCo Global's supply chain data workflow, leveraging Python for data cleaning and transformation, and Mage AI for orchestration . The pipeline integrates Google Cloud Storage for data storage, processes data through Google BigQuery, and visualizes insights using Looker Studio."
 collection: portfolio
 ---
