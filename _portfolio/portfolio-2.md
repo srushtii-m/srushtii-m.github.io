@@ -1,67 +1,59 @@
 ---
-title: "Amazon Product Co-Purchasing Network Analysis"
-excerpt: "This project leverages network analysis and machine learning to analyze over half a million Amazon product metadata, focusing on understanding product relationships, predicting sales ranks, and provide product recommendations."
+title: "Optimizing Urban Bike Sharing with Spatio Temporal Graph Modeling"
+excerpt: "This project streamlines DataCo Global's supply chain data workflow, leveraging Python for data cleaning and transformation, and Mage AI for orchestration . The pipeline integrates Google Cloud Storage for data storage, processes data through Google BigQuery, and visualizes insights using Looker Studio."
 collection: portfolio
 ---
 
-### How Can We Accurately Recommend Products on Amazon Using Network Analysis?
+In this project, I developed a complete data pipeline, guiding data from collection to insights through a series of structured stages.       
+1. Extracted data, cleaned it and loaded into Google Cloud Storage for further processing.
+2. Transformed and modeled the data using fact and dimensional data modeling concepts using Python.
+3. Using ETL concept, orchestrated the data pipeline on Mage AI and loaded the transformed data into Google BigQuery.
+4. Developed a dashboard on Looker Studio.
 
- In this project, I developed a network analysis system to analyze and recommend Amazon products. This involved applying network analysis, particularly centrality metrics, and regression models to predict product sales ranks. Ego graph-based methods were also used for product recommendations based on user behavior.             
- 
- The focus was on overcoming the challenges of visualizing large graphs by using algorithms to identify communities and clusters. This study delved into the intricacies of product recommendation systems, highlighting the limitations of traditional Machine Learning methods in graph-based environments where standard distributions may not adequately represent the dataset.
- 
-![image1](/images/amazon_network.png)
+## Dataset Used
 
-### Data Description
-The dataset includes 548,552 different product reviews and product metadata (Books, music CDs, DVDs and VHS video tapes).               
-For each product the following information is available:                              
-• Id: Product id (number 0, ..., 548551)
-• ASIN: Amazon Standard Identification Number        
-• title: Name/title of the product               
-• group: Product group (Book, DVD, Video or Music)   
-• salesrank: Amazon Salesrank              
-• similar: ASINs of co-purchased products (people who buy X also buy Y)            
-• categories: Location in product category hierarchy to which the product belongs (separated by |, category id in [])\
-• reviews: Product review information: time, user id, rating, total number of votes on the review, total number of helpfulness votes (how many people found the review to be helpful)
+I'm using the dataset from [DataCo Global](https://data.mendeley.com/datasets/8gx2fvg2k6/5). It consists of 52 features in areas of provisioning, production, sales and commercial distribution.
 
-![image3](/images/amazon_data.png)
+## Technologies:
 
-### Key Components of this Project
-* [Amazon Co-Purchase Network Analysis](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/tree/1b1c0533d2989fe47f43e3684965f41426e173d6/Network%20Analysis)
+* Language: Python, SQL
+* Extraction and transformation: Jupyter Notebook, Google BigQuery
+* Storage: Google Cloud Storage
+* Orchestration: [Mage AI](https://www.mage.ai/)
+* Dashboard: Looker Studio
 
-    * Data Preprocessing: Amazon product data was structured into a dictionary, extracting key attributes such as product ID, title, category, sales rank, and reviews.
-        * Attribute Extraction: Isolated key data such as ID, ASIN, Title, Group, Salesrank, Similar products, Categories, and Reviews from the text.
-        * Text Cleaning: Removed stopwords and cleaned text in the Categories section.
-        * Segmentation and Merging: Divided the data by product Group (DVD, Music, Video, Audio), then combined and verified the counts. 
-        * Similarity Analysis: Stripped and compared category words between products to calculate similarity.
-        * Data Organization: Organized all processed data and metrics into a structured dictionary format.
+## Data Pipeline Architecture
 
-    * Network Analysis and Regression Modeling: Created a network of products based on similarities, using the Jaccard index for edge weights. Degree centrality and clustering coefficient metrics were analyzed, informing the regression model used to predict product sales ranks.             
-    The regression model, designed to predict Sales Rank where a lower rank indicates higher sales, anticipates negative coefficients, as an increase in feature values should correspond to a lower rank. To enhance the model's performance, regularization techniques like Lasso and Ridge Regression were utilized for feature selection and modification.
+![Architecture](images/etl_pipeline.png)
 
-    ![image4](/images/amazon_histograms.png)
+Step 1: Cleaning and transformation - sc_data.ipynb
+Step 2: Storage
+Step 3: ETL, Orchestration - Mage: Extract, Transform, Load
+Step 4: Analytics - SQL script
+Step 5: Dashboard
 
-    From the above visualizations, we can observe that:         
-        • There are few products with average rating as 0. In the regression model, products with an average rating of 0 were excluded under the assumption that these represented instances of missing ratings and were therefore considered outliers.\
-        • A few nodes with degree centrality above 0 are key, as they could be influential or catalyst products in the network, likely due to their role as essential accessories or components for other products.\
-        • Many products in the Amazon co-purchase dataset have a clustering coefficient over 0.2, about one-sixth based on the area under the curve. This data can inform a priority queue for promoting and advertising products, aiding in enhancing engagement through inorganic growth strategies.
+## Data Modeling
+The datasets are designed using the principles of fact and dim data modeling concepts.         
+![Modeling](images/sc_datamodel.png)
 
-    * Community Detection Limitations: While community detection was considered for improving model accuracy, computational limitations hindered the implementation of algorithms like the Girvan Newman Algorithm. The extensive time complexity of these algorithms, relative to the size of the network, made their application impractical for this dataset.
+### Step 1: Cleaning and Transformation
+In this step, I loaded the CSV file into VSCode and carried out data cleaning and transformation activities prior to organizing them into fact and dim tables.[script]((https://github.com/srushtii-m/ETL-Analytics/blob/main/data_cleaning.ipynb))
 
-* [Analysis of Network Centrality Metrics](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/tree/1b1c0533d2989fe47f43e3684965f41426e173d6/Centrality%20Metrics)
+### Step 2: Stored the data on Google Cloud Storage
 
-    * Centrality Metrics Analysis in DVD Subgroup: The project focuses on analyzing the centrality metrics of the DVD subgroup (19,828 products) within Amazon's co-purchasing network, due to the full network's large size (548,552 products). Key metrics include Degree, Betweenness, Closeness, and Eigenvector Centrality, aiming to identify influential DVDs based on their network position and connections.
-    
-    * Identifying Influential Products: The analysis used these metrics to pinpoint the most popular DVDs (Degree Centrality), products frequently bought with others (Betweenness Centrality), and the most co-purchased items (Closeness Centrality). DVDs were also categorized by genres to further refine the analysis.
+### Step 3: ETL
+1. Launched the SSH instance and installed required libraries and Mage AI library.
+2. ETL is carried out by accessing the external IP address and mage-ai port number.
+3. Created a new pipeline with the following stages:
+    * [Extract](https://github.com/srushtii-m/ETL-Analytics/blob/main/Mage/scm_dataloader.py)
+    * [Transform](https://github.com/srushtii-m/ETL-Analytics/blob/main/Mage/scm_transformation.py)
+    * [Load](https://github.com/srushtii-m/ETL-Analytics/blob/main/Mage/scm_bigquery.py)
 
 
+### Step 4: Analytics
+After running the pipeline in Mage, the fact and dimensional tables were generated in Google Big Query. Performed few queries and crearted sales analytics table. [SQL queries here.](https://github.com/srushtii-m/ETL-Analytics/blob/main/queries.sql)
 
-* [Product Recommendation](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/tree/1b1c0533d2989fe47f43e3684965f41426e173d6/Product%20Recommendation)
 
-    * Filtering Similar Products: For each purchased product, an ego graph is created, and products similar to the purchased item are filtered using a similarity threshold. This process narrows down the product selection to a more relevant and focused group, based on their interconnectedness in the purchasing network.
-
-    * Ranking and Displaying Recommendations: The filtered similar products are ranked according to their average rating and total reviews. The top 5 products from this ranking are then selected, and their details like title, sales rank, and ratings are displayed to the customer as the most relevant recommendations.
-
-![image2](/images/amazon_product_rec.png)
-
-The complete code is available [here](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/blob/main/README.md).
+### Step 5: Dashboard
+After completing the analysis, I loaded the relevant tables into Looker Studio and created a dashboard. [Dashboard here.](https://lookerstudio.google.com/s/qMZDCm_iIgA)
+![dashboard](images/sales_dashboard.png)

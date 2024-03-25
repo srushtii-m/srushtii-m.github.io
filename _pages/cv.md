@@ -41,9 +41,9 @@ Skills
 * **Programming Languages:** Python, R, SQL, C, C++, MATLAB
 * **Python Libraries:** Pandas, NumPy, Scikit-Learn, Seaborn, TensorFlow, Keras, PyTorch, XG-Boost, Networkx
 * **ML & DL Techniques:** Regression, SVM, Clustering, Time-series Analysis, RL, CNN, RNN, GAN, NLP, DQN
-* **Big Data and Data Visualization:** Hadoop, Spark, MongoDB, Cassandra, Cloudant, Tableau, PowerBI
-* **ETL and Data Pipeline Architecture:** Bash, Airflow, Kafka
-* **Cloud Computing and MLOps:** AWS services, Docker, Kubernetes, Sagemaker and AWS CI/CD pipeline tools
+* **Big Data and Data Visualization:** Hadoop, Spark, MongoDB, Snowflake, Cassandra, Cloudant, Big Query, Tableau, PowerBI, Looker Studio
+* **ETL and Data Pipeline Architecture:** Bash, Airflow, Kafka, Mage AI
+* **Cloud Computing and MLOps:** AWS services and CI/CD pipeline tools, Docker, Kubernetes, GCP services
   
 Teaching
 ======
@@ -55,6 +55,7 @@ Teaching
 Certifications
 ======
 * **AWS Certified Cloud Practitioner**
+* **Natural Language Processing on Google Cloud
 * **Practical MLOps: AWS for Data Scientists & DevOps**
 * **Six Sigma: DMAIC from Technical University of Munich**
 

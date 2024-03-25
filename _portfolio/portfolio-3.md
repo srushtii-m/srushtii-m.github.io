@@ -1,45 +1,74 @@
 ---
-title: "Analysis of Flight Systems "
-excerpt: "This project explores the enhancement of flight fare and delay predictions by merging conventional datasets with Twitter data, employing data processing and sentiment analysis to assess social media's influence on aviation trends."
+title: "Optimizing Urban Bike Sharing with Spatio Temporal Graph Modeling"
+excerpt: "This project aims to optimize bike distribution for CitiBike using a STGCN model. It involves cleaning and analyzing ride data, identifying key patterns through network analysis, and predicting bike traffic at various stations."
 collection: portfolio
 ---
 
-### Do Twitter Insights Enhance Flight Fare and Delay Predictions?
+In this project, I implemented the Spatio Temporal Graph Convolutional Network (STGCN) model, drawing on the architecture and methodologies described in the [referenced paper](https://arxiv.org/abs/1709.04875). The STGCN is composed of several spatio-temporal convolutional blocks, each forming a "sandwich" structure with two gated sequential convolution layers and a spatial graph convolution layer in between​​.
 
-In this project, I merged traditional flight data with sentiment-analyzed Twitter posts to enhance the accuracy of flight fare and delay predictions. This involved a series of steps including meticulous data cleaning, in-depth feature engineering, the application of machine learning models such as Random Forest, and comprehensive sentiment analysis. The objective was to capture the dynamic influence of social media on aviation industry trends. 
+These spatio-temporal convolutional blocks are crucial for fusing features from both spatial and temporal domains, allowing the model to process graph-structured time series effectively​​. The unique design of these blocks, with a spatial layer bridging two temporal layers, facilitates fast spatial-state propagation through both graph and temporal convolutions. This structure also enables the application of a bottleneck strategy, optimizing the network's efficiency​​.
 
-### Flight Fare Prediction
-* Performed Data Cleaning and feature engineering to get meaningful data features.
-* Performed visualizations to understand how the target variable varies with various features such as Flight Duration and Number of Stops, amongst other comparisons. Generated plots for such comparisons.
-* Performed One Hot Encoding and Test-Train Split on the data.
-* Tested Various Machine Learning Regressions such as Linear Regression, Decision trees, Bagging Technique, and Random Forest and produced their Performance Metrics to achieve the highest-performing models.
-* Random Forest turned out to be the best-performing model.
+I leveraged these elements of the STGCN model to analyze and predict bike traffic in Jersey City using data from the Citi Bike system. The model's ability to handle complex spatio-temporal data was instrumental in understanding and forecasting bike usage patterns across different stations and times. This was particularly valuable given the challenges posed by the high nonlinearity and complexity of urban traffic flow, as highlighted in the paper​​.
 
-![image](/images/flight-scores.png)
+## Data
+[Rides data](https://ride.citibikenyc.com/system-data) from 01-01-2017 to 10-01-2023 of Jersey City was used for this analysis.
+The data was cleaned and prepared for the analysis:
+* I addressed missing data and outliers. Specifically, I removed 77 records with missing start station IDs and 9,168 with missing end station IDs. 
+* For distance-based analysis, I calculated the haversine distance between the start and end stations using their latitude and longitude coordinates. 
+* Outliers, identified as rides that were three standard deviations from the mean distance of all rides, were dropped—amounting to 787 rides. 
+* Additionally, I removed 97 rows where the ride durations were negative, ensuring data consistency and reliability for further analysis. 
 
-The main aim was to successfully learn and find a way to superimpose relevant web-scraped data on the flight-fare dataset to introduce dynamicity (fluid market conditions) which could give us an idea about market conditions and ongoing socio-economic affairs that could affect flight fares.
+## Network Visualization
+![image1](/images/stgcn_streetmap.png)
 
-### Twitter data mining
-Scraped Twitter data using Twitter API and Tweepy library. Used keywords to extract over 10000 tweets and cleaned and processed them to perform sentiment analysis using the TextBlob library, calculate volumes, etc to structure it and extract useful insights.
+Performed centrality analysis to identify the key stations in the network. Harborside emerged as the most central node by degree, closeness, and betweenness centrality, indicating it's a crucial hub with many connections, allowing efficient travel across the network, and it bridges various indirect paths, facilitating connectivity within the system.
 
-### Augment Twitter data efficiently to improve predictions
-* The question was if I could augment Twitter data efficiently to improve predictions on parameters such as flight delay and flight fares.
-* Developed a random forest regressor with Twitter-less data and experimented with four kinds of data distribution styles - a combination of polynomial features, normalized target variable, and regular data to improve the model's performance. Using polynomial features and a normalized target variable reduced the mean squared error.
-* Used the same procedure for Twitter augmented data as well, where our primary idea revolves around using more than the three additional features of polarity, subjectivity, and tweet volume for analysis.
-* Could see very minor improvements in results but it strengthened the initial idea of using Twitter features to make predictions.
+## Some insights from Exploratory Data Analysis
 
-![image2](/images/flight-model.png)
+![image](/images/stgcn_yearhmap.png)
 
-### Challenges faced
-* The dataset was limited to information for February and March of the year 2022. Although it is a huge dataset with over 300,000 data points, it fails to give us enough information about the months before and after February and March 2022. One would need a dataset with more variation in months to successfully study the change in flight prices, infer valuable results, and observe interesting trends.
-* Observed certain relationships between the ‘Date’ feature and the ‘Price’ target variable of our dataset which samples data from the year 2022 for February and March. We observe that there is a downward trend which indicates that on unique dates starting February through March, all airlines saw a drop in prices of flight fares. Soon after there was a surge in the prices due to the increase in jet fuel prices globally as observed in the graph on the right. The trending tweets around this decline period were COVID-related and rising tensions between Russia and Ukraine.
-* However, it was not possible to derive interesting conclusions from such a smaller variation dataset and understand what role social media platforms such as Twitter play in this.
+During weekdays, bike ride activity peaks before and after typical office hours, while on weekends, there is a noticeable increase in rides around midday, particularly between 12 PM and 4 PM. This suggests a clear distinction in usage behavior between weekdays and weekends.
 
-### Flight Delay Prediction
-* Considered flight delay data related to weather conditions and scraped Twitter data for a common time (date-wise).
-* Conducted sentiment analysis and produced three additional features that were used in the model - polarity, subjectivity, and tweet volume.
-* Model 1 predicts delays based on weather information solely and Model 2 predicts delays based on weather information as well as augmented Twitter features.
-* Loss values are compared to infer which is the better performing model, and consequently to understand whether Twitter features would be a useful addition for prediction.
-* This showed how social media data provides insights.
+![image](/images/stgcn_yearly.png)
 
-The complete code is accessible [here](https://github.com/srushtii-m/Flight-fares-and-delay-prediction/tree/main).
+We can see a year-over-year growth trend in bike-sharing usage, with a notable increase in demand in the post-COVID-19 years, suggesting a burgeoning industry. Additionally, there's a clear cyclical pattern of demand, with seasonality evident in the data showing peaks during summer and dips in winter.
+
+## Baseline Model
+
+![image](/images/stgcn_snn.png)
+
+Implemetation of a simple feed-forward neural network:
+* This model comprises two hidden layers and utilizes ReLU activation to introduce non-linearity.
+* The final output is produced through a linear layer, making the model suitable for predicting continuous variables, such as the number of bike rides.
+* Training the network with hyperparameters set to a batch size of 32 and using the Adam optimizer over 10 epochs to minimize the loss function effectively.
+* The RMSE for incoming rides was 2.27 and for outgoing rides at 2.25, while the MAE was 1.46 for incoming and 1.50 for outgoing rides. 
+
+## STGCN Model
+
+![image](/images/stgcn.png)
+
+* In this model's implemented architecture, I have used only one spatio-temporal convolution (ST-Conv) block because using 2 led to overfitting during training. Subsequently there is an output layer with a final temporal convolution and a fully-connected layer.
+* The ST-Conv block consists of a spatial graph convolution between two temporal convolution layers. Temporal convolution layers work like time series prediction models, which applies a function to each of the values in the window of these time steps. 
+* The output of this function is passed to a Gated Linear Unit (GLU), which selects features that are
+relevant for subsequent predictions. 
+* Using our Citi Bike model as context, traffic information of these bikes at one station will influence the traffic information at nearby stations.
+
+* Features
+    * Number of unique stations: 498
+    * Number of net rides for every 30 minute interval
+    * Number of 30 minute intervals interval for 2023 data = 13104
+    * V: Node features - Net rides for each node in the graph at each point in time
+    * W: Distance for the edges between each pair of nodes(stations)
+
+* Model Parameters
+   ![image](/images/stgcn_parameters.png)
+
+* Model Testing             
+    Upon testing the STGCN model, the evaluation metrics indicated strong predictive performance with a mean absolute error (MAE) of 0.20 rides and a root mean square error (RMSE) of 0.77 rides. 
+    
+## Conclusions
+* On analyzing the station ride data we find that there is maximum activity in stations such as Grove St PATH station, Hamilton Park and Newport PATH. 
+* Ride data across Jersey City shows sparsity, indicating most rides occur on a limited number of paths, primarily fueled by a few stations.
+* Stations with high demand like Grove St Path and Hamilton Park show significant imbalances in net rides.
+
+The complete code and analysis is [here](https://github.com/srushtii-m/Jersey-City-CitiBike-Demand-Prediction).

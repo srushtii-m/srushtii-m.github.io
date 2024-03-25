@@ -25,9 +25,8 @@ This experience was crucial in sharpening my appreciation for customer-centered 
 
 ### A Deeper Dive into Data Science
 <p align="justify">
-Equipped with this real-world experience, I pivoted to data science. I enjoy uncovering the patterns and stories that data tells us, and turn them into actionable insights. My toolkit includes advanced data analytics, machine learning, and deep learning techniques, along with proficiency in Python, R, and SQL.
+Equipped with this real-world experience, I pivoted to data science. I enjoy uncovering the patterns and stories that data tells us, and turn them into actionable insights. My toolkit includes advanced data analytics, machine learning, deep learning techniques, big data and cloud technologies, along with proficiency in Python, R, and SQL.
 </p>
-
 
 <p align="justify">
 Right now, I'm looking for chances to combine my industrial engineering background with my data science skills. I want to work on projects and in roles where using data to make strategic decisions is key, to drive innovation and make a big impact.

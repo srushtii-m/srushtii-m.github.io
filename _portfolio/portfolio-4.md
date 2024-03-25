@@ -1,60 +1,67 @@
 ---
-title: "Natural Language Processing with Disaster Tweets"
-excerpt: "This project utilizes Microsoft DeBERTa and data preprocessing techniques to classify tweets as related to real disasters or not, exploring the impact of model choice and data cleaning on prediction accuracy."
+title: "Amazon Product Co-Purchasing Network Analysis"
+excerpt: "This project leverages network analysis and machine learning to analyze over half a million Amazon product metadata, focusing on understanding product relationships, predicting sales ranks, and provide product recommendations."
 collection: portfolio
 ---
 
-In this project, I focused on classifying tweets into disaster and non-disaster categories using the Microsoft DeBERTa model. My approach included thoroughly analyzing the data, cleaning it, and preparing it through tokenization and feature engineering. After fine-tuning and training the model with carefully chosen parameters, I evaluated its performance and explored various adjustments, such as refining data cleaning methods and tweaking model hyperparameters, to enhance accuracy.
+### How Can We Accurately Recommend Products on Amazon Using Network Analysis?
 
-The complete code is [here](https://github.com/srushtii-m/Natural-Language-Processing-with-Disaster-Tweets)
+ In this project, I developed a network analysis system to analyze and recommend Amazon products. This involved applying network analysis, particularly centrality metrics, and regression models to predict product sales ranks. Ego graph-based methods were also used for product recommendations based on user behavior.             
+ 
+ The focus was on overcoming the challenges of visualizing large graphs by using algorithms to identify communities and clusters. This study delved into the intricacies of product recommendation systems, highlighting the limitations of traditional Machine Learning methods in graph-based environments where standard distributions may not adequately represent the dataset.
+ 
+![image1](/images/amazon_network.png)
 
-![image](/images/disaster_tweets.png)
-### Approach
+### Data Description
+The dataset includes 548,552 different product reviews and product metadata (Books, music CDs, DVDs and VHS video tapes).               
+For each product the following information is available:                              
+• Id: Product id (number 0, ..., 548551)
+• ASIN: Amazon Standard Identification Number        
+• title: Name/title of the product               
+• group: Product group (Book, DVD, Video or Music)   
+• salesrank: Amazon Salesrank              
+• similar: ASINs of co-purchased products (people who buy X also buy Y)            
+• categories: Location in product category hierarchy to which the product belongs (separated by |, category id in [])\
+• reviews: Product review information: time, user id, rating, total number of votes on the review, total number of helpfulness votes (how many people found the review to be helpful)
 
-The approach can be broken down into the following steps:
+![image3](/images/amazon_data.png)
 
-* Microsoft DeBERTa model: Microsoft DeBERTa model (microsoft/deberta-v3-large) is imported from the transformers library. The tokenizer and model objects are created with the help of the AutoTokenizer and AutoModelForSequenceClassification classes, respectively.
-* Data Analysis and Exploration: The training dataset is loaded and explored using Pandas. The target column is converted to float and the missing values are filled with '[N]'. The 'input' column is created by adding the '[CLS]' token to the beginning of the 'text' column.
-* Data pre-processing: The Dataset class from the datasets library is used to create a dataset from the training data. A function tok_func is defined to tokenize the input text using the DeBERTa tokenizer. The map method of the Dataset class is used to apply this function to each element of the dataset in parallel.
-* Model Performance Metrics: A function compute_metrics is defined to compute the F1 score metric using the load method from the datasets library. This function takes the predicted and actual labels as input and returns the computed metric.
-* Vectorization of the pre-processed text: The pre-processed text is converted into token ids using the DeBERTa tokenizer. This is done by applying the map method to the dataset with the tok_func function as an argument.
-* Building a machine learning model: The train_model function is defined to train a DeBERTa model on the pre-processed and tokenized data. This function takes the pre-processed dataset, tokenizer, learning rate, epochs, batch size, model name, gradient accumulation steps, reshuffle, epochs2, bs2, gradient accumulation steps2, and fp16 as input parameters. The DeBERTa model is instantiated with the AutoModelForSequenceClassification class and the trainer is created with the Trainer class from the transformers library. The training method of the trainer object is called to train the model.
-* Predictions: The trained model is used to make predictions on the test data. The test dataset is loaded and pre-processed in the same way as the training data. The predict method of the trainer object is used to make predictions on the pre-processed test data. The predicted values are thresholded at 0.6 and converted to binary values.
+### Key Components of this Project
+* [Amazon Co-Purchase Network Analysis](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/tree/1b1c0533d2989fe47f43e3684965f41426e173d6/Network%20Analysis)
 
-### Implementation Details
+    * Data Preprocessing: Amazon product data was structured into a dictionary, extracting key attributes such as product ID, title, category, sales rank, and reviews.
+        * Attribute Extraction: Isolated key data such as ID, ASIN, Title, Group, Salesrank, Similar products, Categories, and Reviews from the text.
+        * Text Cleaning: Removed stopwords and cleaned text in the Categories section.
+        * Segmentation and Merging: Divided the data by product Group (DVD, Music, Video, Audio), then combined and verified the counts. 
+        * Similarity Analysis: Stripped and compared category words between products to calculate similarity.
+        * Data Organization: Organized all processed data and metrics into a structured dictionary format.
 
-The code first reads the training data, performs data cleaning and preprocessing, and then trains the DeBERTa model on the preprocessed data. The model is trained in two stages, with the second stage using a smaller batch size and fewer epochs. Finally, the trained model is used to make predictions on a test set, and the predictions are saved to a CSV file for submission.
+    * Network Analysis and Regression Modeling: Created a network of products based on similarities, using the Jaccard index for edge weights. Degree centrality and clustering coefficient metrics were analyzed, informing the regression model used to predict product sales ranks.             
+    The regression model, designed to predict Sales Rank where a lower rank indicates higher sales, anticipates negative coefficients, as an increase in feature values should correspond to a lower rank. To enhance the model's performance, regularization techniques like Lasso and Ridge Regression were utilized for feature selection and modification.
 
-* Packages: transformers, datasets and PyTorch
+    ![image4](/images/amazon_histograms.png)
 
-* External sources of code: Pre-trained models from the Hugging Face Transformers library - the Microsoft DeBERTa model for sequence classification, functions, and classes from the PyTorch and Datasets libraries
+    From the above visualizations, we can observe that:         
+        • There are few products with average rating as 0. In the regression model, products with an average rating of 0 were excluded under the assumption that these represented instances of missing ratings and were therefore considered outliers.\
+        • A few nodes with degree centrality above 0 are key, as they could be influential or catalyst products in the network, likely due to their role as essential accessories or components for other products.\
+        • Many products in the Amazon co-purchase dataset have a clustering coefficient over 0.2, about one-sixth based on the area under the curve. This data can inform a priority queue for promoting and advertising products, aiding in enhancing engagement through inorganic growth strategies.
 
-* Parameters/Architecture: Learning rate: 5e-6
+    * Community Detection Limitations: While community detection was considered for improving model accuracy, computational limitations hindered the implementation of algorithms like the Girvan Newman Algorithm. The extensive time complexity of these algorithms, relative to the size of the network, made their application impractical for this dataset.
 
-* Batch size: 4
+* [Analysis of Network Centrality Metrics](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/tree/1b1c0533d2989fe47f43e3684965f41426e173d6/Centrality%20Metrics)
 
-* Gradient accumulation steps: 1
+    * Centrality Metrics Analysis in DVD Subgroup: The project focuses on analyzing the centrality metrics of the DVD subgroup (19,828 products) within Amazon's co-purchasing network, due to the full network's large size (548,552 products). Key metrics include Degree, Betweenness, Closeness, and Eigenvector Centrality, aiming to identify influential DVDs based on their network position and connections.
+    
+    * Identifying Influential Products: The analysis used these metrics to pinpoint the most popular DVDs (Degree Centrality), products frequently bought with others (Betweenness Centrality), and the most co-purchased items (Closeness Centrality). DVDs were also categorized by genres to further refine the analysis.
 
-* Number of epochs: 2 (for the first training stage), 1 (for the second training stage)
 
-* Weight decay: 0.01
 
-* Loss function: binary cross-entropy
+* [Product Recommendation](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/tree/1b1c0533d2989fe47f43e3684965f41426e173d6/Product%20Recommendation)
 
-* Evaluation metric: F1 score
+    * Filtering Similar Products: For each purchased product, an ego graph is created, and products similar to the purchased item are filtered using a similarity threshold. This process narrows down the product selection to a more relevant and focused group, based on their interconnectedness in the purchasing network.
 
-* Model architecture: Microsoft DeBERTa model for sequence classification with 24 layers and 540M parameters
+    * Ranking and Displaying Recommendations: The filtered similar products are ranked according to their average rating and total reviews. The top 5 products from this ranking are then selected, and their details like title, sales rank, and ratings are displayed to the customer as the most relevant recommendations.
 
-* Fine-tuning strategy: The model is first trained on a training set, and then further fine-tuned on a validation set
+![image2](/images/amazon_product_rec.png)
 
-### Experiments
-* Initially I started training the data with distilbert-base-uncased model (DistilBertTokenizer and TFDistilBertModel) as it is designed to be faster and use less memory and got an accuracy of 83.29%. This was the best accuracy that was obtained after hyperparameter tuning and the parameters were, binary cross-entropy loss and Adam optimizer with a learning rate schedule of exponential decay starting from 1e-5 to 1e-4.
-* Next, used a much larger and powerful model than BERT - microsoft/deberta-v3-large. DeBERTa model explained above was tried to improve by using different learning rates, batch size, number of epochs and reshuffling. The above described parameters gave the best accuracy of 84.55%.
-* To explore the potential for increased accuracy through data cleaning, special tokens including mentions, URLs, and hashtags were defined using a predefined list and integrated into the dataset. These tokens were then added to the tokenizer, and the data was cleaned by removing special characters, replacing URLs, wrapping mentions and hashtags, removing non-ASCII characters, and removing special cases. After cleaning the data, it was trained using the same best performing model mentioned above but it did not improve the accuracy and it was almost the same 84.49%.
-
-### Conclusion
-* While the approach described in the proposal is well-structured and involves several key steps, there are still areas for further exploration and improvement.
-* One area for potential improvement is data preprocessing. While the current approach involves a few basic preprocessing steps, such as filling missing values and adding special tokens, other techniques like stemming, lemmatization, and stop word removal could also be explored. These preprocessing techniques could help improve the quality of the tokenized text and potentially lead to better model performance.
-* Another area for potential improvement is the use of regularization techniques. The current approach uses weight decay as a form of regularization, but other techniques like dropout or L1/L2 regularization could also be tried to prevent overfitting. However, for large datasets, the effectiveness of these techniques may be limited.
-* In addition, the current approach relies on a single classification model. Using an ensemble of models, each trained on different subsets of the data, could potentially improve performance and provide more robust predictions.
-* Interestingly, cleaning the data by defining special tokens using a predefined list that includes mentions, URLs, and hashtags did not improve the model's accuracy significantly. This result suggests that these things store semantic information about texts and should not be ignored during preprocessing.
+The complete code is available [here](https://github.com/srushtii-m/Amazon-product-co-purchasing-network-analysis/blob/main/README.md).
