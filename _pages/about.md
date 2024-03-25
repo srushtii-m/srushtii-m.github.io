@@ -23,7 +23,7 @@ During my year in operations management and analytics, I embraced the principles
 This experience was crucial in sharpening my appreciation for customer-centered strategies and the significance of basing decisions on data.
 </p>
 
-### A Deeper Dive into Data Science
+### A Deeper Dive into Data Science and Analytics
 <p align="justify">
 Equipped with this real-world experience, I pivoted to data science. I enjoy uncovering the patterns and stories that data tells us, and turn them into actionable insights. My toolkit includes advanced data analytics, machine learning, deep learning techniques, big data and cloud technologies, along with proficiency in Python, R, and SQL.
 </p>

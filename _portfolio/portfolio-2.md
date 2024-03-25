@@ -1,6 +1,6 @@
 ---
 title: "Building an ETL Pipeline : Sales Insights Case Study"
-excerpt: "This project streamlines DataCo Global's supply chain data workflow, leveraging Python for data cleaning and transformation, and Mage AI for orchestration . The pipeline integrates Google Cloud Storage for data storage, processes data through Google BigQuery, and visualizes insights using Looker Studio."
+excerpt: "This project enhances DataCo Global's ETL data pipeline, employing Mage AI for orchestration, Google Cloud Storage and BigQuery for data handling, and Looker Studio for insights visualization."
 collection: portfolio
 ---
 
