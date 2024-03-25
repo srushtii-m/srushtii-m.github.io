@@ -55,9 +55,10 @@ Teaching
 Certifications
 ======
 * **AWS Certified Cloud Practitioner**
-* **Natural Language Processing on Google Cloud
+* **Natural Language Processing on Google Cloud**
 * **Practical MLOps: AWS for Data Scientists & DevOps**
 * **Six Sigma: DMAIC from Technical University of Munich**
+* **Excel Skills for Business from Macquarie University**
 
 
 

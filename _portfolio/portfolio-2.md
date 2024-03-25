@@ -24,7 +24,7 @@ I'm using the dataset from [DataCo Global](https://data.mendeley.com/datasets/8g
 
 ## Data Pipeline Architecture
 
-![Architecture](images/etl_pipeline.png)
+![Architecture](/images/etl_pipeline.png)
 
 Step 1: Cleaning and transformation - sc_data.ipynb
 Step 2: Storage
@@ -34,7 +34,7 @@ Step 5: Dashboard
 
 ## Data Modeling
 The datasets are designed using the principles of fact and dim data modeling concepts.         
-![Modeling](images/sc_datamodel.png)
+![Modeling](/images/sc_datamodel.png)
 
 ### Step 1: Cleaning and Transformation
 In this step, I loaded the CSV file into VSCode and carried out data cleaning and transformation activities prior to organizing them into fact and dim tables.[script]((https://github.com/srushtii-m/ETL-Analytics/blob/main/data_cleaning.ipynb))
@@ -56,4 +56,4 @@ After running the pipeline in Mage, the fact and dimensional tables were generat
 
 ### Step 5: Dashboard
 After completing the analysis, I loaded the relevant tables into Looker Studio and created a dashboard. [Dashboard here.](https://lookerstudio.google.com/s/qMZDCm_iIgA)
-![dashboard](images/sales_dashboard.png)
+![dashboard](/images/sales_dashboard.png)
