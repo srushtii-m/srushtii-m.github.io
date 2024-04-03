@@ -273,6 +273,15 @@ defaults:
       author_profile: true
       share: true
       comment: true
+    # _portfolio2
+  - scope:
+      path: ""
+      type: portfolio3
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
   # _talks
   - scope:
       path: ""
