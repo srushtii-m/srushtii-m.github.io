@@ -22,11 +22,19 @@ Education
 Work Experience
 ======
 
-* **Operations Analyst @ V-Innovative Engineering** (October 2021 – July 2022) 
-  * Quality Control: Implemented Six Sigma methodologies in data analysis for quality control and supply chain optimization, achieving a reduction in product defects and a 5% decrease in inventory costs, while enhancing supplier performance metrics
-  * Reporting and Analysis: Utilized Python and SQL for automated regulatory compliance reporting, and created real-time project management dashboards in Tableau, improving project delivery efficiency
-  
-* **Operations Manager @ Amazon India** (February 2021 – September 2021)
+* **Data Science Intern @ Wells Fargo** (May 2023 - August 2023) 
+  * Developed a real-time credit card fraud detection system with Python, scikit-learn, and TensorFlow, achieving 95% accuracy and reducing financial fraud losses by 70%
+  * Managed over 1 million daily transactions, leveraging advanced data preprocessing and feature engineering techniques
+  * Collaborated with security and compliance teams, resulting in a 20% reduction in false positive rates through regular audits and model refinement
+  * Utilized AWS CloudWatch, Lambda, and S3 for real-time performance monitoring, anomaly detection, and large-scale data management, while implementing enhanced security protocols with AWS KMS and IAM to safeguard sensitive financial data
+
+* **Data Scientist @ Genpact** (August 2022 - August 2023) 
+  * Developed a Python-based chatbot using NLTK and scikit-learn for NLP and machine learning, seamlessly integrating with company systems via Flask
+  * Implemented a CI/CD pipeline with GitLab, reducing time-to-market by 40% through automated testing and deployment
+  * Handled 15,000 customer queries weekly with a 90% accuracy rate, leveraging sentiment analysis and entity recognition to enhance response times by 60% and boost customer satisfaction by 25%
+  * Integrated AWS services (Lex, Polly, S3) for natural language understanding, text-to-speech, and data storage, significantly contributing to the company’s digital transformation and customer experience enhancement
+
+* **Operations Manager @ Amazon India** (February 2021 – July 2021)
   *  Pick2Stage Project: Led a process optimization initiative in the pick-to-sort process, achieving a 4% reduction in cycle time. This involved pinpointing bottlenecks, analyzing outbound volumes at each delivery station, and process redesign. Successfully piloted and scaled the improved process across multiple AMXL fulfillment centers, backed by a thorough cost-benefit analysis
   * Operational Analytics and System Automation: Developed a system for automating the monitoring and analysis of leadership and associate performance. Streamlined metrics tracking and standardized processes across 12 3P AMXL fulfillment centers, integrating Tableau for real-time data analysis, and enhanced transparency
   * Data-Driven Shift Management: Managed shifts by utilizing predictive analytics to analyze daily and peak season order forecasts and productivity data, effectively optimizing resource allocation and reducing resource overhead during peak periods
@@ -38,12 +46,11 @@ Work Experience
 
 Skills
 ======
-* **Programming Languages:** Python, R, SQL, C, C++, MATLAB
+* **Programming Languages:** Python, R, SQL, C++, MATLAB
 * **Python Libraries:** Pandas, NumPy, Scikit-Learn, Seaborn, TensorFlow, Keras, PyTorch, XG-Boost, Networkx
-* **ML & DL Techniques:** Regression, SVM, Clustering, Time-series Analysis, RL, CNN, RNN, GAN, NLP, DQN
-* **Big Data and Data Visualization:** Hadoop, Spark, MongoDB, Snowflake, Cassandra, Cloudant, Big Query, Tableau, PowerBI, Looker Studio
-* **ETL and Data Pipeline Architecture:** Bash, Airflow, Kafka, Mage AI
-* **Cloud Computing and MLOps:** AWS services and CI/CD pipeline tools, Docker, Kubernetes, GCP services
+* **ML & DL Techniques:** Regression, SVM, Clustering, Time-series Analysis, RL, CNN, RNN, GAN, NLP, DQN, GCN
+* **Big Data Technologies:** Apache (Hadoop, Spark, Kafka), Distributed Computing Frameworks (MapReduce)
+* **Cloud Computing and MLOps:** AWS services and CI/CD pipeline tools, Docker, Kubernetes, Azure and GCP services
   
 Teaching
 ======
@@ -54,6 +61,7 @@ Teaching
 
 Certifications
 ======
+* **Tensorflow Developer Certificate**
 * **AWS Certified Cloud Practitioner**
 * **Natural Language Processing on Google Cloud**
 * **Practical MLOps: AWS for Data Scientists & DevOps**
