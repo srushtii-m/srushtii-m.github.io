@@ -16,7 +16,6 @@ Hello! I'm Srushti Manjunath. I began my career in industrial engineering and la
 With a Master’s degree in Industrial Engineering with Advanced Analytics from UIUC, I honed my skills in statistical analysis, machine learning, and deep learning, equipping me to tackle complex, data-driven challenges effectively.
 </p>
 
-### Leveraging Data Science for Strategic Decision-Making and Operational Efficiency
 <p align="justify">
 In my professional experience as a Data Scientist, I developed real-time credit card fraud detection systems and chatbots, leveraging technologies such as Python, TensorFlow, and AWS. My expertise extends to operations management, where I optimized processes and employed predictive analytics to enhance efficiency.
 </p>
