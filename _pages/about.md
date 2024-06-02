@@ -9,29 +9,25 @@ redirect_from:
 ![cover](/images/new-cp.png){: .align-center}
 
 <p align="justify">
-Hello! I'm Srushti Manjunath. I started my academic and professional career in industrial engineering and now I'm diving into data science. Switching to data science was a way to enhance my skills to use data to solve business problems.
-</p>
-
-### Industrial Engineering Roots
-<p align="justify">
-My academic and professional journey began with a focus on industrial engineering, where I developed a strong base in optimizing processes, and operations and understanding supply chain management. These skills are key to my understanding of the bigger picture in any business setting.
-</p>
-
-### Operational Excellence at Amazon India and V-Innovative
-<p align="justify">
-During my year in operations management and analytics, I embraced the principles of customer focus, curiosity, responsibility, and innovation. 
-This experience was crucial in sharpening my appreciation for customer-centered strategies and the significance of basing decisions on data.
-</p>
-
-### A Deeper Dive into Data Science and Analytics
-<p align="justify">
-Equipped with this real-world experience, I pivoted to data science. I enjoy uncovering the patterns and stories that data tells us, and turn them into actionable insights. My toolkit includes advanced data analytics, machine learning, deep learning techniques, big data and cloud technologies, along with proficiency in Python, R, and SQL.
+Hello! I'm Srushti Manjunath. I began my career in industrial engineering and later transitioned into data science. This shift reflects my passion for using data to tackle business challenges and drive innovation. Leveraging my background in optimization and operations and supply chain management, I now apply advanced analytical techniques to uncover insights and develop data-driven solutions that enhance decision-making and efficiency.
 </p>
 
 <p align="justify">
-Right now, I'm looking for chances to combine my industrial engineering background with my data science skills. I want to work on projects and in roles where using data to make strategic decisions is key, to drive innovation and make a big impact.
+With a Master’s degree in Industrial Engineering with Advanced Analytics from the University of Illinois at Urbana-Champaign, I developed a robust foundation in analytics and data science. This education honed my skills in statistical analysis, machine learning, and deep learning, equipping me to tackle complex, data-driven challenges effectively.
+</p>
+
+### Leveraging Data Science for Strategic Decision-Making and Operational Efficiency
+<p align="justify">
+My professional experience spans various roles where I have successfully applied my skills in statistical analysis, machine learning, and deep learning to solve complex, data-driven challenges. As a Data Scientist, I developed real-time credit card fraud detection systems and chatbots, leveraging technologies such as Python, TensorFlow, and AWS. My expertise extends to operations management, where I optimized processes and employed predictive analytics to enhance efficiency. This diverse background has sharpened my ability to handle large datasets, implement advanced machine learning algorithms, and deliver actionable insights, making me adept at driving innovation and improving business outcomes.
 </p>
 
 <p align="justify">
-At its core, my career is about growing, learning, and using what I know to tackle real-world problems. It's about using data to see things differently and solve problems in new ways.
+Currently, I am researching the application of Graph Convolutional Networks (GCNs) for demand prediction and forecasting, aiming to enhance the accuracy and efficiency of predictive models in complex networks. By leveraging GCNs and related methodologies, I seek to uncover intricate patterns and relationships within data, driving innovative solutions for more accurate demand forecasting.
 </p>
+
+
+<p align="justify">
+My career is centered on continuous growth, learning, and applying my expertise to solve real-world problems, leveraging data to discover new perspectives and solutions.
+</p>
+
+
