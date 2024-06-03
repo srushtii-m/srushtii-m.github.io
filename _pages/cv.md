@@ -14,7 +14,7 @@ redirect_from:
 <p align="justify">
 <b>M.S. in Industrial Engineering with Advanced Analytics, 2024</b><br>
 University of Illinois at Urbana-Champaign, IL, USA<br>
-GPA: 3.81/4.00<br>
+GPA: 3.80/4.00<br>
 Coursework: Basics of Statistical Learning, Data Science Analytics using Probabilistic Graph Models, Analysis of Network Data, Applied Machine Learning, Supply Chain Analytics, Deep Learning with Mathematical Applications, Dynamic Programming and Reinforcement Learning, Statistics for Big Data and Clustering
 </p>
 
