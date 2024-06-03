@@ -1,13 +1,12 @@
 ---
 permalink: /
-#title: 
+title: "Hello, I'm Srushti!"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-## **Hello! I'm Srushti Manjunath.**
 
 <p align="justify">
 I began my career in industrial engineering and later transitioned into data science. Leveraging my background in optimization and operations and supply chain management, I now apply advanced analytical techniques to uncover insights and develop data-driven solutions that enhance decision-making and efficiency.
