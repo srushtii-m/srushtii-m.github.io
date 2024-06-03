@@ -6,7 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-#[cover](/images/new-cp.png){: .align-center}
 
 ### **Hello! I'm Srushti Manjunath.**
 <p align="justify">
