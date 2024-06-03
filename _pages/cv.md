@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-### Education
+## Education
 
 <p align="justify">
 <b>M.S. in Industrial Engineering with Advanced Analytics, 2024</b><br>
@@ -23,7 +23,7 @@ GPA: 9.16/10.00<br>
 Coursework: Advanced Operations Research, Artificial Intelligence and Expert Systems, Statistics, Supply Chain and Logistics Management, Simulation Modeling and Analysis, Lean Manufacturing, Quality Assurance and Reliability, Enterprise Resource Planning, Production Technology, Operations Management
 </p>
 
-### Work Experience
+## Work Experience
 
 <p align="justify">
 <b>Data Science Intern @ Wells Fargo</b> (May 2023 - August 2023)<br>
@@ -62,7 +62,7 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 </ul>
 </p>
 
-### Skills
+## Skills
 
 <p align="justify">
 <ul>
@@ -74,7 +74,7 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 </ul>
 </p>
 
-### Teaching
+## Teaching
 
 <p align="justify">
 <b>Graduate Teaching Assistant @ University of Illinois Urbana-Champaign</b><br>
@@ -85,7 +85,7 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 </ul>
 </p>
 
-### Certifications
+## Certifications
 
 <p align="justify">
 <ul>
