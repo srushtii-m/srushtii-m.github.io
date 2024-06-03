@@ -13,14 +13,14 @@ redirect_from:
 
 <p align="justify">
 <b>M.S. in Industrial Engineering with Advanced Analytics, 2024</b><br>
-University of Illinois at Urbana-Champaign, IL, USA
+University of Illinois at Urbana-Champaign, IL, USA<br>
 GPA: 3.81/4.00<br>
 Coursework: Basics of Statistical Learning, Data Science Analytics using Probabilistic Graph Models, Analysis of Network Data, Applied Machine Learning, Supply Chain Analytics, Deep Learning with Mathematical Applications, Dynamic Programming and Reinforcement Learning, Statistics for Big Data and Clustering
 </p>
 
 <p align="justify">
 <b>Bachelor of Engineering in Industrial Engineering and Management, 2021</b><br>
-BMS College of Engineering, Bangalore, India
+BMS College of Engineering, Bangalore, India<br>
 GPA: 9.16/10.00<br>
 Coursework: Advanced Operations Research, Artificial Intelligence and Expert Systems, Statistics, Supply Chain and Logistics Management, Simulation Modeling and Analysis, Lean Manufacturing, Quality Assurance and Reliability, Enterprise Resource Planning, Production Technology, Operations Management
 </p>
