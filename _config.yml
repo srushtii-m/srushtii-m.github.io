@@ -273,7 +273,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
-    # _portfolio2
+    # _portfolio3
   - scope:
       path: ""
       type: portfolio3
