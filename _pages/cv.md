@@ -28,7 +28,7 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 ## Work Experience
 
 <p align="justify">
-<b>Data Science Intern @ Wells Fargo</b> (May 2023 - August 2023)<br>
+<b>Data Science Intern @ Wells Fargo</b> (May 2023 - April 2024)<br>
 <ul>
   <li>Developed a real-time credit card fraud detection system with Python, scikit-learn, and TensorFlow, achieving 95% accuracy and reducing financial fraud losses by 70%</li>
   <li>Managed over 1 million daily transactions, leveraging advanced data preprocessing and feature engineering techniques</li>
