@@ -30,20 +30,29 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 <p align="justify">
 <b>Data Science Intern @ Wells Fargo</b> (May 2023 - April 2024)<br>
 <ul>
-  <li>Developed a real-time credit card fraud detection system with Python, scikit-learn, and TensorFlow, achieving 95% accuracy and reducing financial fraud losses by 70%</li>
-  <li>Managed over 1 million daily transactions, leveraging advanced data preprocessing and feature engineering techniques</li>
-  <li>Collaborated with security and compliance teams, resulting in a 20% reduction in false positive rates through regular audits and model refinement</li>
-  <li>Utilized AWS CloudWatch, Lambda, and S3 for real-time performance monitoring, anomaly detection, and large-scale data management, while implementing enhanced security protocols with AWS KMS and IAM to safeguard sensitive financial data</li>
+  <li>Developed a real-time credit card fraud detection system, achieving 95% accuracy and reducing financial fraud losses by 70%.</li>
+  <li>Performed statistical analysis on transaction data, identifying fraud patterns and implementing predictive models, reducing undetected fraudulent transactions by 30%.</li>
+  <li>Created performance reports using Pandas and Matplotlib, presenting actionable insights to management.</li>
+  <li>Designed and managed scalable database systems for financial data analysis and reporting.</li>
+  <li>Developed SQL queries and stored procedures for ETL processes.</li>
+  <li>Processed over 1 million daily transactions, implementing advanced data preprocessing and feature engineering techniques.</li>
+  <li>Utilized AWS CloudWatch, Lambda, KMS, and IAM for real-time monitoring, serverless computing, data encryption, and compliance.</li>
+  <li>Developed a risk analytics dashboard using Tableau, improving decision-making efficiency by 25%.</li>
+  <li>Facilitated training sessions for the operations team to enhance system monitoring and maintenance.</li>
 </ul>
 </p>
 
 <p align="justify">
 <b>Data Scientist @ Genpact</b> (August 2022 - August 2023)<br>
 <ul>
-  <li>Developed a Python-based chatbot using NLTK and scikit-learn for NLP and machine learning, seamlessly integrating with company systems via Flask</li>
-  <li>Implemented a CI/CD pipeline with GitLab, reducing time-to-market by 40% through automated testing and deployment</li>
-  <li>Handled 15,000 customer queries weekly with a 90% accuracy rate, leveraging sentiment analysis and entity recognition to enhance response times by 60% and boost customer satisfaction by 25%</li>
-  <li>Integrated AWS services (Lex, Polly, S3) for natural language understanding, text-to-speech, and data storage, significantly contributing to the company’s digital transformation and customer experience enhancement</li>
+  <li>Developed a Python-based chatbot, integrating sentiment analysis and entity recognition, enhancing customer satisfaction by 25%.</li>
+  <li>Managed analysis of 15,000 weekly customer queries with a 90% accuracy rate, improving response times by 60%.</li>
+  <li>Conducted A/B testing and performance reviews, increasing first-contact reply rates by 30%.</li>
+  <li>Architected an enterprise-wide MRC database system with robust data management and security protocols.</li>
+  <li>Engaged with cross-functional partners to build database systems.</li>
+  <li>Implemented encryption and access controls, conducting regular security audits.</li>
+  <li>Implemented a CI/CD pipeline with GitLab, reducing time-to-market by 40%.</li>
+  <li>Integrated AWS services (Lex, Polly, S3) for digital transformation.</li>
 </ul>
 </p>
 
