@@ -14,7 +14,7 @@ I’m a Data Scientist and Industrial Engineer with a passion for solving comple
 
 ### **Academic Background**
 <p align="justify">
-With a Master’s degree in Industrial Engineering with Advanced Analytics from UIUC, I honed my skills in statistical analysis, machine learning, and deep learning, equipping me to tackle complex, data-centric problems effectively.
+With a Master’s degree in Industrial Engineering with Advanced Analytics from UIUC, I honed my skills in statistical analysis, machine learning, deep learning, and graph learning, equipping me to tackle complex, data-centric problems effectively.
 </p>
 
 ### **Professional Expertise**
@@ -28,7 +28,7 @@ This diverse background has sharpened my ability to handle large datasets and da
 
 ### **Current Research**
 <p align="justify">
-Currently, I am researching the application of Graph Neural Networks (GNNs) and Large Language Models for demand forecasting, aiming to enhance the accuracy and efficiency of predictive models in complex networks. By leveraging GCNs and related methodologies, I seek to uncover patterns and relationships within data, driving innovative solutions for more accurate demand forecasting.
+I am currently researching the application of Graph Neural Networks (GNNs) and Large Language Models for demand forecasting, focusing on data-centric AI and data-centric graph learning. My goal is to enhance the accuracy and efficiency of predictive models in complex networks by improving data quality and leveraging graph structures for better predictive analytics. By utilizing Graph Convolutional Networks (GCNs) and related methodologies, I seek to uncover patterns and relationships within data, driving innovative solutions for more accurate demand forecasting.
 </p>
 
 <p align="justify">

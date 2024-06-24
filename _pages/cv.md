@@ -32,6 +32,7 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 <ul>
   <li>Developed a real-time credit card fraud detection system, achieving 95% accuracy and reducing financial fraud losses by 70%.</li>
   <li>Performed statistical analysis on transaction data, identifying fraud patterns and implementing predictive models, reducing undetected fraudulent transactions by 30%.</li>
+  <li>Enhanced fraud detection models by integrating data-centric AI techniques to improve data quality and feature engineering.</li>
   <li>Created performance reports using Pandas and Matplotlib, presenting actionable insights to management.</li>
   <li>Designed and managed scalable database systems for financial data analysis and reporting.</li>
   <li>Developed SQL queries and stored procedures for ETL processes.</li>
@@ -80,6 +81,7 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
   <li><b>Programming Languages:</b> Python, R, SQL, C++, MATLAB</li>
   <li><b>Python Libraries:</b> Pandas, NumPy, Scikit-Learn, Seaborn, TensorFlow, Keras, PyTorch, XG-Boost, Networkx</li>
   <li><b>ML & DL Techniques:</b> Regression, SVM, Clustering, Time-series Analysis, RL, CNN, RNN, GAN, NLP, DQN, GCN</li>
+  <li><b>Data-Centric AI and Graph Learning:</b> Data Quality Improvement, Predictive Analytics with Graphs, Graph Databases (Neo4j, Amazon Neptune)
   <li><b>Big Data Technologies:</b> Apache (Hadoop, Spark, Kafka), Distributed Computing Frameworks (MapReduce)</li>
   <li><b>Cloud Computing and MLOps:</b> AWS services and CI/CD pipeline tools, Docker, Kubernetes, Azure and GCP services</li>
 </ul>
