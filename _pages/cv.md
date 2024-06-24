@@ -25,6 +25,19 @@ GPA: 9.16/10.00<br>
 Coursework: Advanced Operations Research, Artificial Intelligence and Expert Systems, Statistics, Supply Chain and Logistics Management, Simulation Modeling and Analysis, Lean Manufacturing, Quality Assurance and Reliability, Enterprise Resource Planning, Production Technology, Operations Management
 </p>
 
+## Skills
+
+<p align="justify">
+<ul>
+  <li><b>Programming Languages:</b> Python, R, SQL, C++, MATLAB</li>
+  <li><b>Python Libraries:</b> Pandas, NumPy, Scikit-Learn, Seaborn, TensorFlow, Keras, PyTorch, XG-Boost, Networkx</li>
+  <li><b>ML & DL Techniques:</b> Regression, SVM, Clustering, Time-series Analysis, RL, CNN, RNN, GAN, NLP, DQN, GCN</li>
+  <li><b>Data-Centric AI and Graph Learning:</b> Data Quality Improvement, Predictive Analytics with Graphs, Graph Databases (Neo4j, Amazon Neptune)</li>
+  <li><b>Big Data Technologies:</b> Apache (Hadoop, Spark, Kafka), Distributed Computing Frameworks (MapReduce)</li>
+  <li><b>Cloud Computing and MLOps:</b> AWS services and CI/CD pipeline tools, Docker, Kubernetes, Azure and GCP services</li>
+</ul>
+</p>
+
 ## Work Experience
 
 <p align="justify">
@@ -74,18 +87,6 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 </ul>
 </p>
 
-## Skills
-
-<p align="justify">
-<ul>
-  <li><b>Programming Languages:</b> Python, R, SQL, C++, MATLAB</li>
-  <li><b>Python Libraries:</b> Pandas, NumPy, Scikit-Learn, Seaborn, TensorFlow, Keras, PyTorch, XG-Boost, Networkx</li>
-  <li><b>ML & DL Techniques:</b> Regression, SVM, Clustering, Time-series Analysis, RL, CNN, RNN, GAN, NLP, DQN, GCN</li>
-  <li><b>Data-Centric AI and Graph Learning:</b> Data Quality Improvement, Predictive Analytics with Graphs, Graph Databases (Neo4j, Amazon Neptune)
-  <li><b>Big Data Technologies:</b> Apache (Hadoop, Spark, Kafka), Distributed Computing Frameworks (MapReduce)</li>
-  <li><b>Cloud Computing and MLOps:</b> AWS services and CI/CD pipeline tools, Docker, Kubernetes, Azure and GCP services</li>
-</ul>
-</p>
 
 ## Teaching
 
