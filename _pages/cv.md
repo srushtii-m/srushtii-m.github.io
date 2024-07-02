@@ -60,6 +60,7 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
   <li> Created core machine learning algorithms with scikit-learn for customer clustering and analyzed engagement campaign impacts, facilitating rapid development of scalable models.</li>
   <li>Executed multiple Proof of Concept (POC) projects to explore new ML algorithms, demonstrating business impacts and enhancing data handling procedures for quality and ethical AI development.</li>
   <li>Delivered actionable insights by transforming data from Snowflake, APIs, and flat files using SQL, Python, and Tableau, improving decision-making and campaign ROI by 20%.</li>
+</ul>  
 </p>
 
 <p align="justify">
