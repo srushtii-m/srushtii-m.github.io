@@ -14,16 +14,16 @@ I’m a Data Scientist and Industrial Engineer with a passion for solving comple
 
 ### **Academic Background**
 <p align="justify">
-With a Master’s degree in Industrial Engineering with Advanced Analytics from UIUC, I honed my skills in statistical analysis, machine learning, deep learning, and graph learning, equipping me to tackle complex, data-centric problems effectively.
+With a Master’s degree in Industrial Engineering with Advanced Analytics from UIUC, I honed my skills in statistical analysis, machine learning, deep learning, natural language processing and graph learning, equipping me to tackle complex, data-centric problems effectively.
 </p>
 
 ### **Professional Expertise**
 <p align="justify">
-In my professional experience as a Data Scientist, I developed real-time credit card fraud detection systems and chatbots, leveraging technologies such as Python, TensorFlow, and AWS. My expertise extends to operations management, where I optimized processes and employed predictive analytics to enhance efficiency.
+In my professional experience as a Data Scientist, I led the development of generative AI models for real-time credit card fraud detection using TensorFlow and PyTorch. I also created a Python-based chatbot that significantly improved customer satisfaction and handled numerous queries weekly. Leveraging AWS technologies, I built efficient data pipelines and deployed machine learning models with CI/CD best practices. Additionally, my role in operations management involved optimizing processes and employing predictive analytics to enhance demand forecast accuracy and overall efficiency.
 </p>
 
 <p align="justify">
-This diverse background has sharpened my ability to handle large datasets and databases, implement advanced machine learning algorithms, and deliver actionable insights, making me adept at driving innovation and improving business outcomes.
+This diverse background has sharpened my ability to handle large datasets and databases, implement advanced machine learning algorithms, and deliver actionable insights. My expertise in developing generative AI models, optimizing processes, and leveraging AWS technologies makes me adept at driving innovation and improving business outcomes across various sectors.
 </p>
 
 ### **Current Research**
