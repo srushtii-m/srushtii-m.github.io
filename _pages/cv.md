@@ -43,33 +43,45 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 <p align="justify">
 <b>Data Scientist @ Wells Fargo</b> (May 2023 - Present)<br>
 <ul>
-  <li>Developed and implemented predictive models and generative AI systems using TensorFlow, GPT, LLaMA, and AWS Bedrock, achieving significant improvements in fraud detection and personalized financial advice.</li>
-  <li>Integrated and managed scalable data processing and database systems with AWS Lambda, Step Functions, MySQL, PostgreSQL, and MongoDB, enhancing ETL processes and overall data quality.</li>
-  <li>Created advanced data visualizations and dashboards with Tableau, Pandas, and Matplotlib, providing actionable insights and improving decision-making efficiency by 25%.</li>
-  <li>Enhanced customer service automation by fine-tuning models with LoRA, PEFT, and RLHF, and developed a GenAI tool using LangChain and RAG for advanced information retrieval.</li>
-  <li>Analyzed customer interactions to improve journey strategies, and developed recommendation systems for personalized financial advice, increasing engagement and satisfaction.</li>
+  <li>Automated customer query handling for loan and mortgage applications by developing chatbots using GPT, LLaMA, and Huggingface transformers, resulting in a 20% increase in customer satisfaction and a boost in operational efficiency.</li>
+  <li>Implemented DeepSpeed-Chat for large-scale model training, reducing training time and cost by utilizing memory-efficient techniques like LoRA and ZeRO optimization.</li>
+  <li>Fine-tuned generative AI models using RLHF, PEFT, and LoRA, cutting response times by 35%. Assessed reward models using the RewardBench framework, focusing on alignment with human preferences.</li>
+  <li>Developed a finance document analysis app with LangChain, FAISS, and Chroma DB, automating information extraction. Enhanced query accuracy by 25% using RAG Q&A chains with a recursive tree approach and LLM-based memoization</li>
+  <li>Boosted retrieval accuracy by 40% with Fusion Retrieval, Intelligent Reranking, and Graph RAG. Cut LLM inference costs by 30% using model distillation, quantization, and pruning.</li>
+  <li>Conducted A/B testing on generative models and prompt engineering for personalized investment recommendations, improving user interaction metrics by 20% and documenting results for compliance.</li>
+  <li>Developed custom neural networks with TensorFlow and PyTorch for fraud detection, achieving 95% accuracy and improving resource efficiency by 30% through data augmentation and transfer learning. </li>
+  <li>Collaborated with cross-functional teams to develop NLP and statistical solutions, building supervised learning models with scikit-learn, SparkML, and spaCy for credit scoring and customer segmentation. </li>
 </ul>
 </p>
 
 <p align="justify">
 <b>Data Scientist @ Genpact</b> (August 2022 - August 2023)<br>
 <ul>
-  <li> Developed a Python-based chatbot with sentiment analysis and entity recognition using NLTK, BERT, and BART, enhancing customer satisfaction by 25% and managing 15,000 weekly queries with 90% accuracy.</li>
-  <li>Built and launched efficient and reliable data pipelines using AWS Glue, Redshift, and Lambda, ensuring seamless data movement across platforms and reducing deployment time.</li>
-  <li>Deployed and monitored ML models using GitHub, TeamCity, and AWS Model Registry, adhering to CI/CD best practices and performance monitoring via Datadog.</li>
-  <li> Created core machine learning algorithms with scikit-learn for customer clustering and analyzed engagement campaign impacts, facilitating rapid development of scalable models.</li>
-  <li>Executed multiple Proof of Concept (POC) projects to explore new ML algorithms, demonstrating business impacts and enhancing data handling procedures for quality and ethical AI development.</li>
-  <li>Delivered actionable insights by transforming data from Snowflake, APIs, and flat files using SQL, Python, and Tableau, improving decision-making and campaign ROI by 20%.</li>
+  <li> Led end-to-end production implementation of Multi-Armed Bandit algorithms using Vowpal Wabbit on AWS with SageMaker, Kinesis, S3, and Athena, optimizing a BERT-based chatbot, boosting customer satisfaction by 25% while handling 15,000+ queries weekly.</li>
+  <li>Developed ML models using scikit-learn and Python, automating customer clustering and predicting effort scores, reducing customer friction by 15% and enhancing data-driven decision-making.</li>
+  <li>Built deep learning models with Hugging Face Transformers and SQL, analyzing 2,500+ transcripts to uncover 15+ complaint categories,
+improving capture accuracy by 10% and reducing repeat calls by 15%.</li>
+  <li>Built and optimized scalable data pipelines using Apache Spark, Hive, and Python to process 20+ years of historical ERP data and realtime DTC data, improving data preparation and boosting processing efficiency by 30% for seamless financial analysis.</li>
+  <li> Led POC projects to engineer features like sales velocity and customer engagement scores using ML algorithms (random forests, XGBoost), improving model accuracy by 20% and enhancing cash flow forecasting.</li>
+  <li>Delivered critical insights by transforming data from Snowflake, APIs, and flat files with SQL, Python, and Tableau, improving decisionmaking and optimizing complex SQL queries to boost data retrieval speed by 25% for financial reporting.</li>
 </ul>  
 </p>
 
 <p align="justify">
 <b>Operations Manager & Data Scientist@ Amazon India</b> (August 2020 – July 2021)<br>
 <ul>
-  <li>Data Science: Improved demand forecast accuracy by 15% using AWS SageMaker and Athena for model training, hyperparameter tuning, and deploying machine learning algorithms and time-series analysis.Worked with PySpark, Amazon S3, and AWS Glue to preprocess and transform large-scale datasets, improving data accuracy. Created and maintained several Tableau dashboards to improve the efficiency of data validation workflows, visualizing trend lines, patterns, and KPIs for stakeholders, resulting in data-driven decision-making.
-  <li>Pick2Stage Project: Led a process optimization initiative in the pick-to-sort process, achieving a 4% reduction in cycle time. This involved pinpointing bottlenecks, analyzing outbound volumes at each delivery station, and process redesign. Successfully piloted and scaled the improved process across multiple AMXL fulfillment centers, backed by a thorough cost-benefit analysis</li>
-  <li>Operational Analytics and System Automation: Developed a system for automating the monitoring and analysis of leadership and associate performance. Streamlined metrics tracking and standardized processes across 12 3P AMXL fulfillment centers, integrating Tableau for real-time data analysis, and enhanced transparency</li>
-  <li>Data-Driven Shift Management: Managed shifts by utilizing predictive analytics to analyze daily and peak season order forecasts and productivity data, effectively optimizing resource allocation and reducing resource overhead during peak periods</li>
+  <li>Improved demand forecasting accuracy by 15% using machine learning models in AWS SageMaker, optimizing inventory management
+during peak sales events like Prime Day.</li>
+ <li>Built a scalable data processing pipeline using PySpark and AWS Glue, automating data transformation for large-scale datasets in Amazon
+S3, ensuring readiness for model training and analysis.</li>
+ <li>Led MLOps deployment in AWS SageMaker, automating training, hyperparameter tuning, and deployment with CI/CD workflows, ensuring
+continuous delivery of optimized models.</li>
+ <li>Engineered advanced features by applying statistical methods for customer segmentation and discount strategy analysis, improving demand
+predictions and sales targeting.</li>
+ <li>Developed Tableau dashboards for trend analysis and KPI visualization, enabling data-driven decisions through statistical validation.</li>
+  <li>Pick2Stage Project: Led a process optimization initiative in the pick-to-sort process, achieving a 4% reduction in cycle time. This involved pinpointing bottlenecks, analyzing outbound volumes at each delivery station, and process redesign. Successfully piloted and scaled the improved process across multiple AMXL fulfillment centers, backed by a thorough cost-benefit analysis.</li>
+  <li>Operational Analytics and System Automation: Developed a system for automating the monitoring and analysis of leadership and associate performance. Streamlined metrics tracking and standardized processes across 12 3P AMXL fulfillment centers, integrating Tableau for real-time data analysis, and enhanced transparency.</li>
+  <li>Data-Driven Shift Management: Managed shifts by utilizing predictive analytics to analyze daily and peak season order forecasts and productivity data, effectively optimizing resource allocation and reducing resource overhead during peak periods.</li>
 </ul>
 </p>
 
