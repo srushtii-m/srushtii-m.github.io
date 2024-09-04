@@ -264,15 +264,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _portfolio1d
-  - scope:
-      path: ""
-      type: portfolio1d
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
   # _portfolio2
   - scope:
       path: ""
@@ -282,10 +273,19 @@ defaults:
       author_profile: true
       share: true
       comment: true
-    # _portfolio3
+  # _portfolio3
   - scope:
       path: ""
       type: portfolio3
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _portfolio4
+  - scope:
+      path: ""
+      type: portfolio4
     values:
       layout: single
       author_profile: true
