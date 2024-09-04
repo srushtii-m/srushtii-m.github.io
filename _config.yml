@@ -207,6 +207,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  portfolio1:
+    output: true
+    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -264,6 +267,16 @@ defaults:
       author_profile: true
       share: true
       comment: true
+  # _portfolio1
+  - scope:
+      path: ""
+      type: portfolio1
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
   # _portfolio2
   - scope:
       path: ""
@@ -282,16 +295,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _portfolio4
-  - scope:
-      path: ""
-      type: portfolio4
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
+
   - scope:
       path: ""
       type: talks

@@ -15,14 +15,15 @@ main:
   - title: "Data Science & ML"
     url: /portfolio/
   
-
+  - title: "Deep Learning"
+    url: /portfolio1/
+    
   - title: "IE & Supply Chain"
     url: /portfolio2/
         
   - title: "TILs"
     url: /portfolio3/
     
-  - title: "Deep Learning"
-    url: /portfolio4/
+
   #- title: "Guide"
   #  url: /markdown/
