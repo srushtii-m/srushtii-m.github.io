@@ -9,7 +9,7 @@ redirect_from:
 
 
 <p align="justify">
-Hello, I’m Srushti Manjunath, a Data Scientist and Industrial Engineer with over three years of experience in solving complex problems using optimization, advanced machine learning techniques and generative AI. My expertise spans across operations management, statistical analysis, and large-scale data analytics, allowing me to develop innovative, data-driven solutions that enhance business decision-making and operational efficiency.
+Hello, I’m Srushti Manjunath, a Data Scientist and Industrial Engineer with over four years of experience applying optimization, advanced machine learning, and generative AI across finance, technology, and operations. I build end to end AI systems spanning data engineering, model development, and MLOps that turn complex data into decisions and accelerate workflows. My work blends extensive analytics with scalable deployment to deliver reliable products and measurable business impact.
 </p>
 
 ### **Academic Background**
@@ -19,16 +19,11 @@ With a Master’s degree in Industrial Engineering with Advanced Analytics from 
 
 ### **Professional Expertise**
 <p align="justify">
-In my professional experience as a Data Scientist, I have led the development of advanced machine learning, deep learning, generative AI, large language models (LLMs), and reinforcement learning (RL) solutions, utilizing techniques such as A/B testing and Multi-Armed Bandit (MAB) to optimize decision-making and model performance. I have fine-tuned models using LoRA (Low-Rank Adaptation) and RLHF (Reinforcement Learning with Human Feedback) to enhance efficiency and alignment with user needs, and applied Graph Neural Networks (GNNs) for complex predictive analytics. My expertise in AWS and cloud technologies has enabled me to design scalable data pipelines, deploy models with CI/CD workflows, and ensure real-time optimization. Additionally, I have implemented NLP-based chatbot systems, driving improvements in customer query handling, demand forecasting, and operational processes through data-driven strategies, resulting in greater efficiency and business impact.
+I build and ship LLM powered applications and analytics platforms on AWS and GCP with Kubernetes, combining NLP, representation learning, and graph methods with strong data engineering and observability. At Wells Fargo I delivered retrieval augmented generation systems, multi agent analytics, and evaluation frameworks with guardrails for safety and compliance. At Genpact I developed contact center language understanding and marketing analytics. At Amazon I improved demand forecasting and inventory planning using time series modeling and scalable pipelines. I focus on clean data foundations, continuous integration and delivery, cost aware inference, and rigorous measurement so solutions are reliable, efficient, and easy to operate.
 </p>
 
 <p align="justify">
-This diverse background has strengthened my ability to work with large datasets, build and deploy advanced machine learning models, and deliver actionable insights that drive strategic decision-making. My expertise spans generative AI, NLP, and deep learning, with a strong proficiency in cloud platforms like AWS and GCP for scalable model deployment and data pipeline automation. I have successfully implemented NLP-based chatbot systems to improve customer query handling and operational processes, while also optimizing demand forecasting and process efficiency. These skills enable me to develop innovative, data-driven solutions that deliver measurable impact across various industries.
-</p>
-
-### **Current Research**
-<p align="justify">
-I am currently working on the integration of Graph Neural Networks (GNNs) and Deep Reinforcement Learning (DRL) to optimize complex network routing and improve predictive analytics. By developing a DQN agent using PyTorch and custom gym environments, I aim to leverage graph structures for dynamic decision-making and uncover patterns that enhance routing efficiency. Simultaneously, I focus on improving the accuracy and efficiency of predictive models in complex networks by applying Graph Convolutional Networks (GCNs) to identify relationships within data, driving innovative solutions in demand forecasting and network optimization. This combination of cutting-edge GNN and DRL methodologies allows me to address complex, data-centric challenges with high-impact results.
+I take products from exploration to production on large and complex datasets, translating business goals into robust AI systems. My applied work spans assistants that streamline customer service and analytics that inform planning and inventory decisions. I prioritize measurable outcomes,  continuous evaluation and improvement so models remain accurate, trustworthy, and maintainable over time.
 </p>
 
 <p align="justify">
