@@ -30,11 +30,13 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 <p align="justify">
 <ul>
   <li><b>Programming Languages:</b> Python, R, SQL, C++, MATLAB</li>
-  <li><b>Python Libraries:</b> Pandas, NumPy, Scikit-Learn, Seaborn, TensorFlow, Keras, PyTorch, XG-Boost, Networkx</li>
+  <li><b>Python Libraries:</b> Pandas, NumPy, Scikit-Learn, Seaborn, TensorFlow, Keras, PyTorch, XG-Boost, Networkx, NLTK, spaCy, Huggingface-hub, Transformers</li>
   <li><b>ML & DL Techniques:</b> Regression, SVM, Clustering, Time-series Analysis, RL, CNN, RNN, GAN, NLP, DQN, GCN</li>
   <li><b>Data-Centric AI and Graph Learning:</b> Data Quality Improvement, Predictive Analytics with Graphs, Graph Databases (Neo4j, Amazon Neptune)</li>
   <li><b>Big Data Technologies:</b> Apache (Hadoop, Spark, Kafka), Distributed Computing Frameworks (MapReduce)</li>
-  <li><b>Cloud Computing and MLOps:</b> AWS services and CI/CD pipeline tools, Docker, Kubernetes, Azure and GCP services</li>
+  <li><b>Cloud Computing and MLOps:</b> AWS (S3, EMR, EC2, Redshift, SageMaker, Glue, Lambda, Bedrock), GCP (GKE, Vertex AI, BigQuery), MS Azure</li>
+  <li><b>Observability & Eval:</b> Langfuse, Langtrace, LangSmith, Prometheus, Grafana, OpenTelemetry, MLflow, Arize, RAGAS, Guardrails AI</li>
+  <li><b>APIs & UI:</b> FastAPI, gRPC, GraphQL, Chainlit, Streamlit</li>
 </ul>
 </p>
 
