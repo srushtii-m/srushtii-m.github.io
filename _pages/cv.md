@@ -123,6 +123,15 @@ Predictive Analytics for a Global Sports Apparel Retail Client:
 </ul>
 </p>
 
+## Languages
+
+<p align="justify">
+<ul>
+  <li><b>English</b></li>
+  <li><b>German - A2 Level</b></li>
+</ul>
+</p>
+
 
 
   
