@@ -29,5 +29,3 @@ I take products from exploration to production on large and complex datasets, tr
 <p align="justify">
 I thrive in collaborative environments and excel at communicating insights to both technical and non-technical stakeholders. Continuous learning is at the heart of my approach, ensuring I stay updated with the latest advancements in machine learning and data science. I am eager to tackle new challenges and contribute to impactful projects that leverage data to discover new perspectives and solutions.
 </p>
-
-

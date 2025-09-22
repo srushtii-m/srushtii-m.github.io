@@ -43,45 +43,48 @@ Coursework: Advanced Operations Research, Artificial Intelligence and Expert Sys
 <p align="justify">
 <b>Data Scientist @ Wells Fargo</b> (May 2023 - Present)<br>
 <ul>
-  <li>Automated customer query handling for loan and mortgage applications by developing chatbots using GPT, LLaMA, and Huggingface transformers, resulting in a 20% increase in customer satisfaction and a boost in operational efficiency.</li>
-  <li>Implemented DeepSpeed-Chat for large-scale model training, reducing training time and cost by utilizing memory-efficient techniques like LoRA and ZeRO optimization.</li>
-  <li>Fine-tuned generative AI models using RLHF, PEFT, and LoRA, cutting response times by 35%. Assessed reward models using the RewardBench framework, focusing on alignment with human preferences.</li>
-  <li>Developed a finance document analysis app with LangChain, FAISS, and Chroma DB, automating information extraction. Enhanced query accuracy by 25% using RAG Q&A chains with a recursive tree approach and LLM-based memoization</li>
-  <li>Boosted retrieval accuracy by 40% with Fusion Retrieval, Intelligent Reranking, and Graph RAG. Cut LLM inference costs by 30% using model distillation, quantization, and pruning.</li>
-  <li>Conducted A/B testing on generative models and prompt engineering for personalized investment recommendations, improving user interaction metrics by 20% and documenting results for compliance.</li>
-  <li>Developed custom neural networks with TensorFlow and PyTorch for fraud detection, achieving 95% accuracy and improving resource efficiency by 30% through data augmentation and transfer learning. </li>
-  <li>Collaborated with cross-functional teams to develop NLP and statistical solutions, building supervised learning models with scikit-learn, SparkML, and spaCy for credit scoring and customer segmentation. </li>
+  <li>Developed AI-powered NER pipeline using transformer models (BERT, Llama) and LLM APIs via LangChain, reducing manual labeling by 80% and improving F1 scores by 40% to accelerate dataset creation for complaint triage and risk operations.</li>
+  <li>Fine-tuned Llama 2 & Phi-2 using PEFT for CFPB complaint classification and summarization, improving F1 by +15 points through golden-set validation. Deployed via scheduled Vertex AI batch jobs with BigQuery output.</li>
+  <li>Co-developed and fine-tuned Llama-3 8B using LoRA + RLHF with proprietary domain data, achieving 88% faithfulness through ablation studies, deployed as low-latency endpoints using vLLM with Ray Serve on GKE.</li>
+  <li>Led intern mentorship to generate 12k+ synthetic training examples using teacher LLM (OpenAI) with rejection sampling, improving rare-class recall by +10 points and reducing annotation effort by 30% with Langfuse tracked HITL loops.</li>
+  <li>Engineered content quality pipeline with semantic embedding deduplication and LLM-powered simplification, reducing duplicates and document length by 30% with Pydantic schema checks and data versioning.</li>
+  <li>Built hybrid RAG platform on GKE with intelligent query routing across Postgres+pgvector, Vertex AI Vector Search, and Neo4j GraphRAG. Achieved +20% retrieval accuracy and -40% manual review time for compliance Q&A and research.</li>
+  <li>Performed retrieval R&D on chunking and hybrid BM25+dense with graph/vector routing, rerankers and multi-hop reasoning. Deployed a production evaluation stack with RAGAS metrics, Arize and MLflow tracing, and CI/CD regression gates.</li>
+  <li>Prototyped a governed multi-agent analytics stack with Google A2A and MCP tools, routed NL to SQL, RAG, and analytics tasks with memory, human-in-the-loop validation, and observability, reducing time-to-insight by 40%.</li>
 </ul>
 </p>
 
 <p align="justify">
 <b>Data Scientist @ Genpact</b> (August 2022 - August 2023)<br>
+Contact-Center NLU analytics pipeline for a Financial Services Client:
 <ul>
-  <li> Led end-to-end production implementation of Multi-Armed Bandit algorithms using Vowpal Wabbit on AWS with SageMaker, Kinesis, S3, and Athena, optimizing a BERT-based chatbot, boosting customer satisfaction by 25% while handling 15,000+ queries weekly.</li>
-  <li>Developed ML models using scikit-learn and Python, automating customer clustering and predicting effort scores, reducing customer friction by 15% and enhancing data-driven decision-making.</li>
-  <li>Built deep learning models with Hugging Face Transformers and SQL, analyzing 2,500+ transcripts to uncover 15+ complaint categories,
-improving capture accuracy by 10% and reducing repeat calls by 15%.</li>
-  <li>Built and optimized scalable data pipelines using Apache Spark, Hive, and Python to process 20+ years of historical ERP data and realtime DTC data, improving data preparation and boosting processing efficiency by 30% for seamless financial analysis.</li>
-  <li> Led POC projects to engineer features like sales velocity and customer engagement scores using ML algorithms (random forests, XGBoost), improving model accuracy by 20% and enhancing cash flow forecasting.</li>
-  <li>Delivered critical insights by transforming data from Snowflake, APIs, and flat files with SQL, Python, and Tableau, improving decisionmaking and optimizing complex SQL queries to boost data retrieval speed by 25% for financial reporting.</li>
+  <li>Built turn-level intent and sentiment classifiers for diarized call transcripts using Python and spaCy. Fine-tuned and benchmarked multiple transformer models (BERT, RoBERTa, DistilBERT, GPT-3) optimizing for F1/latency trade-offs. Deployed Streamlit applications for training needs analysis and operations dashboards, improving CSAT by 40% in pilot regions.</li>
+  <li>Implemented comprehensive privacy controls for call transcripts with PII redaction, encryption, and audit trails. Collaborated with PMs and SMEs to label 2,500+ utterances across 15+ call categories, creating a compliant, high-quality training dataset.</li>
+  <li>Developed hierarchical call-level feature aggregation system generating KPIs for QA, coaching, and trend analysis. Delivered prescriptive analytics that guided chatbot training improvements, increased resolution rates, and informed customer retention strategies.</li>
+  <li>Enhanced sentiment detection accuracy from 68% to 92% by replacing VADER/logistic regression with class-weighted, threshold calibrated BERT model featuring span aggregation.</li>
+  <li> Identified anomalously long handle-time calls using Isolation Forest trained on call features and operational metadata. Flagged outliers enabled root-cause analysis and workflow optimization to reduce call duration.</li>
+  <li>Engineered end-to-end MLOps pipeline on AWS including batch processing (S3, Step Functions), model training/registry (SageMaker), real-time inference endpoints, CI/CD automation, and monitoring.</li>
+</ul>
+Predictive Analytics for a Global Sports Apparel Retail Client:
+<ul>
+  <li>Optimized ad targeting strategy by developing predictive models (Logistic Regression, SVM, Random Forest) to forecast user click propensity and delivered a 12% CTR increase and improved ROAS across key customer segments during seasonal, quarterly campaigns.</li>
+  <li>Collaborated with the marketing and UX teams to design and execute A/B tests using Google Optimize and Hotjar, optimizing ad placement and creative strategies that improved CTR by 15% MoM across campaigns reaching 3M ad impressions per month.</li>
+  <li>Developed ARIMA and autoregressive models to forecast key ad performance metrics (clicks, RPC, CTR), enabling proactive budget allocation and improving campaign ROI forecast accuracy by 20%.</li>
+  <li>Built ETL pipelines using Python, SQL, AWS Glue, and Redshift to integrate cross-platform ad, CRM, and web data sources, ensuring near real-time availability for campaign performance tracking.</li>
+  <li>Designed and maintained automated Tableau dashboards to visualize the customer journey, engagement metrics, lead conversion, and ad revenue, improving decision making between the Marketing and Product teams.</li>
+
 </ul>  
 </p>
 
 <p align="justify">
-<b>Operations Manager & Data Scientist@ Amazon India</b> (August 2020 – July 2021)<br>
+<b>Operations Manager & Data Scientist@ Amazon India</b> (June 2020 – July 2021)<br>
 <ul>
-  <li>Improved demand forecasting accuracy by 15% using machine learning models in AWS SageMaker, optimizing inventory management
-during peak sales events like Prime Day.</li>
- <li>Built a scalable data processing pipeline using PySpark and AWS Glue, automating data transformation for large-scale datasets in Amazon
-S3, ensuring readiness for model training and analysis.</li>
- <li>Led MLOps deployment in AWS SageMaker, automating training, hyperparameter tuning, and deployment with CI/CD workflows, ensuring
-continuous delivery of optimized models.</li>
- <li>Engineered advanced features by applying statistical methods for customer segmentation and discount strategy analysis, improving demand
-predictions and sales targeting.</li>
- <li>Developed Tableau dashboards for trend analysis and KPI visualization, enabling data-driven decisions through statistical validation.</li>
-  <li>Pick2Stage Project: Led a process optimization initiative in the pick-to-sort process, achieving a 4% reduction in cycle time. This involved pinpointing bottlenecks, analyzing outbound volumes at each delivery station, and process redesign. Successfully piloted and scaled the improved process across multiple AMXL fulfillment centers, backed by a thorough cost-benefit analysis.</li>
-  <li>Operational Analytics and System Automation: Developed a system for automating the monitoring and analysis of leadership and associate performance. Streamlined metrics tracking and standardized processes across 12 3P AMXL fulfillment centers, integrating Tableau for real-time data analysis, and enhanced transparency.</li>
-  <li>Data-Driven Shift Management: Managed shifts by utilizing predictive analytics to analyze daily and peak season order forecasts and productivity data, effectively optimizing resource allocation and reducing resource overhead during peak periods.</li>
+  <li>Improved SKU level forecast accuracy by 15% MAPE using ARIMA, SARIMAX, ETS, Prophet, LSTM, and DeepAR models, reducing inventory cost by 10% while preserving fill rate across 13 FCs.</li>
+ <li>Built reusable SKU-week feature store with key attributes (buffer, staleness, discount, segment) that powered forecasting models, pricing algorithms, and operational dashboards across multiple business functions.</li>
+ <li>Automated Andes to S3 ETL with Redshift, Glue, Athena, and PySpark, eliminating manual refresh and enabling reliable updates.</li>
+ <li>Designed SKU-Customer segmentation to optimize inventory routing between replenishment and clearance channels, increasing GMROI on markdown cohorts, and accelerating turnover of slow movers.</li>
+ <li>Standardized KPIs and launched Inventory Health, in-stock, and compliance dashboards in Tableau, automating over 300 recurring reports and improving operational efficiency by 20%.</li>
+  <li>Collaborated with ops, marketing, finance, and FC leaders on weekly reviews, applying causal inference and what-if analysis to identify forecast drivers and align supply chain strategies.</li>
 </ul>
 </p>
 
