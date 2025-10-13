@@ -17,12 +17,20 @@ main:
   
   - title: "Deep Learning & RL"
     url: /portfolio1/
+
+  - title: "LLMs & Alignment"
+    url: /portfolio4/
+  
+  - title: "RAG & Agents"
+    url: /portfolio5/
     
   - title: "IE & Supply Chain"
     url: /portfolio2/
         
   - title: "TILs"
     url: /portfolio3/
+
+  
     
 
   #- title: "Guide"
