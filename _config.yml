@@ -295,6 +295,24 @@ defaults:
       author_profile: true
       share: true
       comment: true
+  # _portfolio4
+  - scope:
+      path: ""
+      type: portfolio4
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _portfolio5
+  - scope:
+      path: ""
+      type: portfolio5
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
 
   - scope:
       path: ""
