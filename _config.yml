@@ -219,6 +219,12 @@ collections:
   portfolio3:
     output: true
     permalink: /:collection/:path/
+  portfolio4:
+    output: true
+    permalink: /:collection/:path/
+  portfolio5:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
