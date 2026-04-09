@@ -1,0 +1,61 @@
+---
+title: "Compliance Report Generator"
+excerpt: "AI-powered compliance document analysis system with a Streamlit interface — combines vector search (Qdrant), knowledge graphs (Neo4j), and LLM agents to answer regulatory questions from PDFs, with PII filtering, prompt guardrails, and human-in-the-loop approval."
+collection: portfolio5
+---
+
+A full-stack compliance agent that processes regulatory documents (GDPR, internal policies) and makes them queryable through multiple retrieval strategies. Users upload PDFs, ask questions, and receive answers grounded in the document — with every response gated through PII detection, prompt safety checks, and human approval before being saved to memory.
+
+### Architecture
+
+```
+PDF Upload
+    ↓
+Chunked Extraction (pdfplumber — text + tables)
+    ↓
+Dual Indexing:
+    ├── Qdrant (semantic vector search)
+    └── Neo4j (entity relationships + full-text index)
+    ↓
+Agent Query
+    ├── Memory-Aware QA (retrieval + conversation history)
+    └── Tool Agent (risk scoring, news, compliance lookup)
+    ↓
+Safety Check (PII detection + prompt guardrails)
+    ↓
+HITL Approval → Memory Storage
+```
+
+### Key Components
+
+**Multi-Modal Retrieval** — vector similarity (Qdrant) finds semantically relevant chunks; Neo4j graph queries surface entity relationships that keyword search misses.
+
+**Three Agent Modes**
+- *Memory-Aware QA*: retrieves document context with Neo4j graph memory injected into the prompt, role-specific system instructions (legal analyst / policy researcher / compliance officer)
+- *Tool Agent*: LangChain ZERO_SHOT_REACT agent with 5 tools — risk scoring, compliance lookup, live news, summarization, and compliance score
+- *Context-Aware Chain*: role-based QA with custom PromptTemplates per user type
+
+**Tool Registry** — `registry.py` centralises all tools; `toolset.py` adds lookup by name, description mapping, and a human-readable summary for debugging
+
+**Security Layer**
+- PII detection (emails, phone numbers, SSNs) before any LLM call
+- Keyword-based prompt guardrails blocking harmful queries
+- `self_hosted_llm_runner.py` — Ollama-based safety classifier for air-gapped environments where prompts cannot leave the machine
+- Consistent enforcement across CLI, agents, and Streamlit UI
+
+**Human-in-the-Loop (HITL)**
+- Streamlit: session state pauses execution, shows answer + source chunks, waits for approve/regenerate
+- CLI: `hitl_approval_agent.py` programmatic wrapper for batch workflows — runs chain, prints answer with sources, prompts for approval before saving
+
+**LangGraph Ingestion Workflow** — checkpointable pipeline (ingest → embed → graph → memory) that can resume from any failed step without reprocessing earlier stages
+
+**Embedding Utilities** — `vectorstore/embeddings.py` centralises `embed_query`, `embed_documents`, and `compute_similarity` (cosine) so all components share one embedding model configuration
+
+### What I Learned
+- Combining vector search and knowledge graphs for richer retrieval — graphs surface entity relationships that pure semantic similarity misses
+- LangGraph for stateful, fault-tolerant workflows — nodes can fail and resume without reprocessing earlier steps
+- Building practical guardrails: PII regex detection + prompt classification before any LLM call, with a self-hosted fallback for privacy-sensitive deployments
+- Human-in-the-loop patterns in Streamlit — using session state to pause execution and wait for user approval before committing to memory
+- Multi-agent orchestration: separating memory-aware QA from tool-calling agents, and designing a tool registry that makes the agent's capabilities inspectable and extensible
+
+**GitHub:** [github.com/srushtii-m/compliance-agent](https://github.com/srushtii-m/compliance-agent)
